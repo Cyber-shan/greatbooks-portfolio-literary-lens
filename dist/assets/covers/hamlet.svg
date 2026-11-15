@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><g id="flower" fill="none" stroke="#c5ac78" stroke-width="1"><path d="M0 0c-35-17-20-41 0-19C20-41 35-17 0 0c-26 21-38-8-15-14C-38-8-26 21 0 0c26 21 38-8 15-14C38-8 26 21 0 0z"/><circle cy="-8" r="4" fill="#c5ac78"/></g></defs>
+  <path fill="#302e2b" d="M0 0h600v800H0z"/>
+  <path d="M30 30h540v740H30z" fill="none" stroke="#bfa675" stroke-opacity=".35"/>
+  <path d="M139 669q-46-107 3-201M461 669q46-107-3-201M150 608q-51-42-28-75m19 18q10-47 38-55M450 608q51-42 28-75m-19 18q-10-47-38-55" fill="none" stroke="#bfa675" stroke-width="1.3"/>
+  <use href="#flower" transform="translate(142 469) rotate(-17) scale(1.4)"/><use href="#flower" transform="translate(120 539) rotate(-60)"/><use href="#flower" transform="translate(176 502) rotate(31)"/><use href="#flower" transform="translate(458 469) rotate(17) scale(1.4)"/><use href="#flower" transform="translate(480 539) rotate(60)"/><use href="#flower" transform="translate(424 502) rotate(-31)"/>
+  <path d="M300 320c-84 0-131 63-120 139l13 61 42 23 10 63h110l10-63 42-23 13-61c11-76-36-139-120-139z" fill="#c9b38c"/>
+  <path d="M300 337c-59 0-99 35-105 84m105-84c59 0 99 35 105 84" fill="none" stroke="#e0cfac" stroke-width="2"/>
+  <path d="M210 450c-1-24 40-34 60-8l-8 47-32 4c-16-6-21-23-20-43zm180 0c1-24-40-34-60-8l8 47 32 4c16-6 21-23 20-43z" fill="#302e2b"/>
+  <path d="m300 479-18 37 18-7 18 7zM196 496l37 15m171-15-37 15" fill="#302e2b"/>
+  <path d="M251 550q49 21 98 0l-3 37q-47 17-92 0z" fill="#302e2b"/>
+  <path d="M267 553v38m16-33v36m17-33v34m17-37v36m16-41v38" stroke="#c9b38c" stroke-width="3"/>
+  <path d="m250 303-23-46 46 21 27-43 27 43 46-21-23 46z" fill="none" stroke="#c5ac78" stroke-width="2"/>
+  <g fill="#c5ac78"><circle cx="227" cy="257" r="3"/><circle cx="300" cy="235" r="3"/><circle cx="373" cy="257" r="3"/></g>
+  <path d="M181 674h238m-212 10h186m-155 10h124" stroke="#bfa675" stroke-width="1"/>
+  <path fill="#fff" filter="url(#grain)" opacity=".045" d="M0 0h600v800H0z"/>
+</svg>

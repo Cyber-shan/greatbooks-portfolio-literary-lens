@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><g id="blossom" fill="#ebd6c0"><path d="M0 0c-13-4-16-17-5-18 5 0 7 5 5 7 0-14 14-16 18-6 2 6-3 10-8 9 15 2 17 15 7 20-6 3-11-2-11-7-3 15-17 17-21 7-3-7 2-12 8-11-14-5-15-18-4-21 6-2 11 3 10 9"/><circle r="3" fill="#b18c6f"/></g><pattern id="screen" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M0 0h48v48H0zm0 0 48 48M48 0 0 48" fill="none" stroke="#d2afa0" stroke-width=".5"/></pattern></defs>
+<path fill="#aa7d7a" d="M0 0h600v800H0z"/><path d="M30 30h540v740H30z" fill="none" stroke="#e9d4bc" stroke-opacity=".4"/>
+<path d="M97 290h102v407H97zM401 290h102v407H401z" fill="url(#screen)" opacity=".5"/><path d="M97 290h102v407H97zm304 0h102v407H401z" fill="none" stroke="#dcbcab" stroke-width="1"/>
+<circle cx="318" cy="415" r="100" fill="#e7d4b6"/><circle cx="318" cy="415" r="112" fill="none" stroke="#e7d4b6" stroke-width=".8" opacity=".65"/>
+<path d="M89 584q76-34 176-9t240-14M89 604q76-34 176-9t240-14M89 624q76-34 176-9t240-14M89 644q76-34 176-9t240-14M107 664q66-30 158-9t222-11M148 684q53-22 117-9t181-6" fill="none" stroke="#e1bfa9" stroke-width="1.2"/>
+<path d="M118 581q90-101 253-139m-153 60q-4-68 32-119m23 94q45 7 87 51m-190 16q-36-27-50-66" fill="none" stroke="#66534e" stroke-width="6" stroke-linecap="round"/>
+<path d="M119 581q112-89 252-139m-153 60q-2-69 32-119m23 94q51 10 87 51" fill="none" stroke="#c0a18d" stroke-width="1"/>
+<use href="#blossom" transform="translate(251 385) rotate(20) scale(1.1)"/><use href="#blossom" transform="translate(236 423) rotate(-10) scale(.85)"/><use href="#blossom" transform="translate(300 464) rotate(33) scale(1.15)"/><use href="#blossom" transform="translate(340 450) rotate(-20) scale(.9)"/><use href="#blossom" transform="translate(371 438) rotate(15) scale(.9)"/><use href="#blossom" transform="translate(194 522) rotate(-15) scale(1.1)"/><use href="#blossom" transform="translate(320 502) rotate(-20) scale(.85)"/><use href="#blossom" transform="translate(361 529) rotate(10) scale(1.1)"/><use href="#blossom" transform="translate(118 475) rotate(-15) scale(.9)"/>
+<path d="M260 562q-10 7-5 15 13-3 5-15zm120 63q-13 2-12 12 12 3 12-12zm-57 25q-12 5-7 14 13-1 7-14z" fill="#ebd6c0"/>
+<path d="M223 720h154m-125 12h96" stroke="#e1bfa9" stroke-width="1"/><path fill="#fff" filter="url(#g)" opacity=".045" d="M0 0h600v800H0z"/>
+</svg>

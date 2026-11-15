@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><g id="leaf" fill="#ab998c"><path d="M0 0q-34-12-32-45Q-1-35 0 0z"/></g></defs>
+<path fill="#6f556a" d="M0 0h600v800H0z"/><path d="M30 30h540v740H30z" fill="none" stroke="#dbc0a4" stroke-opacity=".4"/>
+<path d="M133 698V429q0-56 65-87l102-73 102 73q65 31 65 87v269z" fill="#60485c" stroke="#c9ad8d" stroke-width="1.4"/>
+<path d="M151 698V430q0-47 58-73l91-64 91 64q58 26 58 73v268" fill="none" stroke="#bda28b" stroke-width=".65"/>
+<path d="M168 697V441q0-39 48-60l84-62 84 62q48 21 48 60v256" fill="none" stroke="#bda28b" stroke-width=".65"/>
+<g fill="none" stroke="#d8bd99" stroke-width="1"><path d="M126 705h348M141 716h318M174 728h252"/><circle cx="300" cy="385" r="27"/><path d="M300 345v-12m0 104v-12m40-40h12m-104 0h12"/></g>
+<path d="M258 461q118 88 0 217" fill="none" stroke="#dbbf98" stroke-width="7" stroke-linecap="round"/><path d="M258 461v217" fill="none" stroke="#dbbf98" stroke-width="1.2"/><path d="M217 566h150m-15-7 18 7-18 7m-135-13 9 6-9 6m-8-12 9 6-9 6" fill="none" stroke="#dbbf98" stroke-width="2"/>
+<path d="M98 700q33-101 19-223M502 700q-33-101-19-223" fill="none" stroke="#ab998c" stroke-width="1.3"/>
+<use href="#leaf" transform="translate(116 518) rotate(-11) scale(.7)"/><use href="#leaf" transform="translate(117 561) rotate(105) scale(.8)"/><use href="#leaf" transform="translate(113 609) rotate(-13) scale(.8)"/><use href="#leaf" transform="translate(107 653) rotate(107) scale(.8)"/><use href="#leaf" transform="translate(484 518) scale(-.7 .7) rotate(-11)"/><use href="#leaf" transform="translate(483 561) scale(-.8 .8) rotate(105)"/><use href="#leaf" transform="translate(487 609) scale(-.8 .8) rotate(-13)"/><use href="#leaf" transform="translate(493 653) scale(-.8 .8) rotate(107)"/>
+<g fill="#d8bd99"><path d="m200 430 2 6 6 2-6 2-2 6-2-6-6-2 6-2zm200 0 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><circle cx="300" cy="385" r="3"/></g>
+<path fill="#fff" filter="url(#g)" opacity=".045" d="M0 0h600v800H0z"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><g id="leaf"><path d="M0 0q-39-16-42-48Q-7-41 0 0z" fill="#dfb8aa"/><path d="M0 0-35-40" stroke="#a5666a" fill="none"/></g></defs>
+  <path fill="#a5666a" d="M0 0h600v800H0z"/>
+  <path d="M30 30h540v740H30z" fill="none" stroke="#f1d4bd" stroke-opacity=".4"/>
+  <path d="M182 710V389a118 118 0 0 1 236 0v321z" fill="#995a5f" stroke="#e7c4ad" stroke-width="1.5"/>
+  <path d="M201 710V389a99 99 0 0 1 198 0v321" fill="none" stroke="#d5aa97" stroke-width=".8"/>
+  <g fill="none" stroke="#e7c4ad" stroke-width="2"><path d="M119 701q64-202 13-375M481 701q-64-202-13-375M137 567l-37-59m42-14 32-58m-34-39-27-45m350 215 37-59m-42-14-32-58m34-39 27-45"/></g>
+  <g><use href="#leaf" transform="translate(141 639) rotate(-21)"/><use href="#leaf" transform="translate(143 575) rotate(104)"/><use href="#leaf" transform="translate(146 504) rotate(-15)"/><use href="#leaf" transform="translate(142 437) rotate(101)"/><use href="#leaf" transform="translate(132 368) rotate(-22)"/><use href="#leaf" transform="translate(459 639) scale(-1 1) rotate(-21)"/><use href="#leaf" transform="translate(457 575) scale(-1 1) rotate(104)"/><use href="#leaf" transform="translate(454 504) scale(-1 1) rotate(-15)"/><use href="#leaf" transform="translate(458 437) scale(-1 1) rotate(101)"/><use href="#leaf" transform="translate(468 368) scale(-1 1) rotate(-22)"/></g>
+  <g transform="translate(300 478)" fill="#edcfb9">
+    <path d="M-39-63c-14-23-3-52 22-56 27-4 47 13 47 37l-3 22 12 18-13 7-6 21 4 20 41 22-10 38H-69l8-39 35-19 1-35c-11-8-17-20-14-36z"/>
+    <path d="M-42-63q-33-34-11-56 19-20 44-10 41-9 49 20 6 25-15 39-1-35-28-31-15 34-39 38" fill="#5f4143"/>
+    <path d="M-26 1q22 19 50 0m-49 5 20 33 28-33" stroke="#a5666a" stroke-width="2" fill="none"/>
+  </g>
+  <path d="M250 625h100m-73 14h46" stroke="#e7c4ad" stroke-width="1"/>
+  <path d="m300 668 6 10-6 10-6-10z" fill="#e7c4ad"/>
+  <path fill="#fff" filter="url(#grain)" opacity=".045" d="M0 0h600v800H0z"/>
+</svg>

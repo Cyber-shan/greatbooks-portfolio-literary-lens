@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d8b77c"/><stop offset="1" stop-color="#b68d50"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h600v800H0z"/>
+  <path d="M30 30h540v740H30z" fill="none" stroke="#f7eacb" stroke-opacity=".34"/>
+  <g fill="none" stroke="#f5e6bf" stroke-width="1.2" opacity=".65">
+    <path d="m128 305 62 45 73-75 82 61 110-24-44 85"/><path d="m345 336 23 81 43-20"/>
+  </g>
+  <g fill="#fbefcf"><circle cx="128" cy="305" r="3"/><circle cx="190" cy="350" r="2.6"/><circle cx="263" cy="275" r="3"/><circle cx="345" cy="336" r="2.5"/><circle cx="455" cy="312" r="3"/><circle cx="411" cy="397" r="2.5"/><circle cx="368" cy="417" r="2"/>
+    <path d="m458 245 3 10 10 3-10 3-3 10-3-10-10-3 10-3zM103 434l2 7 7 2-7 2-2 7-2-7-7-2 7-2zM310 211l2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/>
+  </g>
+  <circle cx="418" cy="483" r="56" fill="#eee3bb"/><circle cx="404" cy="472" r="13" fill="#bba16a" opacity=".35"/><circle cx="438" cy="501" r="6" fill="#bba16a" opacity=".4"/>
+  <path d="M-20 622q137-89 297-26t343 22v182H-20z" fill="#dabe87"/>
+  <path d="M-20 683q175-125 367-55t273-5v177H-20z" fill="#7e683f"/>
+  <path d="M-20 731q160-30 270-75t370 40v104H-20z" fill="#a78650"/>
+  <g transform="translate(245 563)">
+    <path d="m-7-12-7-11 9 4 5-12 5 12 11-4-8 13z" fill="#e8c86d"/>
+    <circle cy="-5" r="11" fill="#f1dab0"/>
+    <path d="m-9 8-6 38 25 1-6-39z" fill="#53624e"/>
+    <path d="m-1 11 34-7 10 5-34 10z" fill="#b96236"/>
+    <path d="m-4 44-3 23m13-23 5 22" fill="none" stroke="#403f30" stroke-width="4" stroke-linecap="round"/>
+    <path d="m-10 16-8 23m23-23 9 19" fill="none" stroke="#53624e" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <path d="M94 711q174-45 267-17" fill="none" stroke="#e8cd94" stroke-width="1" opacity=".7"/>
+  <path fill="#fff" filter="url(#grain)" opacity=".05" d="M0 0h600v800H0z"/>
+</svg>

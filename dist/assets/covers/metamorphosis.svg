@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <path fill="#32352d" d="M0 0h600v800H0z"/>
+  <path d="M30 30h540v740H30z" fill="none" stroke="#c4b384" stroke-opacity=".35"/>
+  <g fill="none" stroke="#a29468" stroke-width="1" opacity=".3"><path d="M87 254h426v425H87zM110 278h380v377H110zM87 679l23-24m380 0 23 24M87 254l23 24m380 0 23-24"/><path d="M110 487h380M300 278v377"/></g>
+  <ellipse cx="300" cy="503" rx="105" ry="155" fill="#bd9b55"/>
+  <path d="M300 352c-64 34-93 88-94 153 0 67 31 121 94 153z" fill="#b18d4a"/>
+  <path d="M300 352c64 34 93 88 94 153 0 67-31 121-94 153z" fill="#c7a661"/>
+  <path d="M300 365v282" stroke="#32352d" stroke-width="3"/>
+  <g fill="none" stroke="#32352d" stroke-width="2.5"><path d="M212 450q90 48 176 0M205 490q95 49 190 0M209 532q92 43 182 0M224 576q76 36 152 0M248 614q53 21 104 0"/></g>
+  <ellipse cx="300" cy="361" rx="44" ry="40" fill="#ad8d4a"/>
+  <path d="M277 336q-31-51-61-69m106 69q31-51 61-69" fill="none" stroke="#d2b272" stroke-width="3" stroke-linecap="round"/>
+  <g fill="none" stroke="#c5a15b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="m217 423-46-26-34-57m247 83 46-26 34-57M201 497l-49-5-28 39m275-34 49-5 28 39M215 566l-46 31-15 57m231-88 46 31 15 57"/></g>
+  <g stroke="#c4b384" opacity=".65"><path d="M120 719h360M282 736h36"/></g>
+  <path fill="#fff" filter="url(#grain)" opacity=".05" d="M0 0h600v800H0z"/>
+</svg>

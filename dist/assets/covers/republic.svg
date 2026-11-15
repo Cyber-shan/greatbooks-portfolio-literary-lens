@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <path fill="#6e7358" d="M0 0h600v800H0z"/>
+  <path d="M30 30h540v740H30z" fill="none" stroke="#e1d6b1" stroke-opacity=".4"/>
+  <circle cx="300" cy="335" r="55" fill="#d4bc7e"/>
+  <circle cx="300" cy="335" r="74" fill="none" stroke="#ddd0a4" stroke-width=".8"/>
+  <path d="M300 242v-17m0 220v-17M207 335h-17m220 0h-17M234 269l-12-12m156 156-12-12M234 401l-12 12m156-156-12 12" stroke="#ddd0a4" stroke-width="1.2"/>
+  <path d="m142 468 158-93 158 93z" fill="#dfd3af"/>
+  <path d="m171 456 129-64 129 64z" fill="#6e7358" stroke="#bdb58e" stroke-width="1"/>
+  <path d="M151 475h298v18H151zM157 631h286v15H157zM138 646h324v15H138zM118 661h364v15H118z" fill="#dfd3af"/>
+  <g fill="#dfd3af"><path d="M172 500h40v122h-40zm72 0h40v122h-40zm72 0h40v122h-40zm72 0h40v122h-40zM165 493h54v10h-54zm72 0h54v10h-54zm72 0h54v10h-54zm72 0h54v10h-54zM165 621h54v10h-54zm72 0h54v10h-54zm72 0h54v10h-54zm72 0h54v10h-54z"/></g>
+  <g stroke="#6e7358" stroke-width="1"><path d="M181 507v108m11-108v108m11-108v108M253 507v108m11-108v108m11-108v108M325 507v108m11-108v108m11-108v108M397 507v108m11-108v108m11-108v108"/></g>
+  <path d="M100 699h400M135 710h330M270 731h60" stroke="#ddd0a4" stroke-width="1"/>
+  <path d="m114 298 3 9 9 3-9 3-3 9-3-9-9-3 9-3zm370 66 2 7 7 2-7 2-2 7-2-7-7-2 7-2z" fill="#ddd0a4"/>
+  <path fill="#fff" filter="url(#grain)" opacity=".045" d="M0 0h600v800H0z"/>
+</svg>

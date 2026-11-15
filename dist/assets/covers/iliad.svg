@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><g id="leaf" fill="#dfca9b"><path d="M0 0q-29-7-32-33Q-6-29 0 0z"/><path d="m-4-4-23-23" stroke="#b18b4e" stroke-width=".8"/></g></defs>
+<path fill="#b18b4e" d="M0 0h600v800H0z"/><path d="M30 30h540v740H30z" fill="none" stroke="#efdbac" stroke-opacity=".4"/>
+<circle cx="300" cy="474" r="171" fill="none" stroke="#e0c796" stroke-width="1"/><circle cx="300" cy="474" r="181" fill="none" stroke="#e0c796" stroke-width=".6"/>
+<path d="M223 439c-34-43-20-112 24-142 45-32 96-19 135 7 24 17 52 24 70 22-32 38-66 30-103 13-51-23-99-13-104 51z" fill="#4e4937"/>
+<path d="M233 397q-7-78 74-88 42-6 83 18" fill="none" stroke="#dcc28e" stroke-width="2"/>
+<path d="M209 494c-14-78 25-141 89-141 77 0 110 58 93 132l-20 35 11 96-50-27-20-81h-23l-18 80-50 28 14-114z" fill="#e0c796"/>
+<path d="M220 461q77-30 161 0l-8 22-50-12-10 27h-25l-12-27-49 13z" fill="#4e4937"/>
+<path d="m300 453 8 106-16 0z" fill="#4e4937"/><path d="M234 416q58-60 119 0M238 429q60-49 121 0" fill="none" stroke="#b18b4e" stroke-width="1"/>
+<path d="M251 668q94 16 169-86" fill="none" stroke="#eddaad" stroke-width="1.4"/>
+<use href="#leaf" transform="translate(290 669) rotate(28) scale(.7)"/><use href="#leaf" transform="translate(325 657) rotate(92) scale(.8)"/><use href="#leaf" transform="translate(353 641) rotate(16) scale(.8)"/><use href="#leaf" transform="translate(378 619) rotate(84) scale(.8)"/><use href="#leaf" transform="translate(402 595) rotate(10) scale(.8)"/>
+<path d="M151 713h298v12H151v-12m20 0v-15h24v27m25-12v-15h24v27m25-12v-15h24v27m25-12v-15h24v27m25-12v-15h24v27m25-12v-15h24v27" fill="none" stroke="#e0c796" stroke-width="1.1"/>
+<path fill="#fff" filter="url(#g)" opacity=".045" d="M0 0h600v800H0z"/>
+</svg>
