@@ -1,6 +1,8 @@
 window.PORTFOLIO_CONTENT = {
   "sampleNotice": "AI-assisted draft analyses and reflections. Review these against your assigned class editions and personalize them with your own understanding and experiences before submitting.",
   "profile": {
+    "name": "Shan Paul S. Bermudo",
+    "photo": "assets/shan-paul-bermudo.png",
     "course": "BSCIS",
     "section": "4th year · Great Books–GEC-GB-NRs",
     "intro": "I am a fourth-year BSCIS student exploring how great literature speaks to the choices, relationships, and responsibilities of modern life. This portfolio brings together eight works and the questions they raise about being human.",
