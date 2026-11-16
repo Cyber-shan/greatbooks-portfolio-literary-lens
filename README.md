@@ -1,4 +1,4 @@
-# Marginalia
+# Portfolio
 
 Run `npm run dev`, then open http://localhost:4173. The static website is in `dist/`. No dependencies are required.
 
