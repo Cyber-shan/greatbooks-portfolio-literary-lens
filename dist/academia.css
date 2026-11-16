@@ -1,0 +1,165 @@
+/* Dark Academia: charcoal, parchment, walnut, and antique brass. */
+:root {
+  color-scheme: dark;
+  --paper: #1d201d;
+  --paper-dark: #171a17;
+  --ink: #eee5d3;
+  --muted: #bcb3a2;
+  --green: #c1a16b;
+  --line: #454137;
+  --serif: Georgia, 'Times New Roman', serif;
+}
+body::after { display: none; }
+::selection { background: #c1a16b; color: #171a17; }
+.site-header { background: #171a17f5; }
+.brand svg, .little-star, .small-line, .strip-star, .handwritten,
+.favorite-orbit, .favorite-line, .reflection-doodle, .closing-star { display: none; }
+.brand { font-weight: 500; }
+.button-primary, .skip-link, .toast { background: var(--green); color: #201d17; }
+.button-primary:hover { background: #d2b37d; }
+.button-outline { border-color: var(--line); color: var(--green); }
+.button-outline:hover, .filter:hover { background: #30352c; }
+.button:hover { transform: none; }
+.header-quick-nav { display: none; }
+.hero { padding-block: 58px 42px; gap: 30px; min-height: 500px; }
+.hero .eyebrow { color: var(--green); letter-spacing: 2px; font-size: 10px; }
+.hero h1 { font-size: clamp(44px, 4.6vw, 66px); line-height: 1.13; letter-spacing: -1.7px; margin: 23px 0; }
+.hero-description { color: var(--muted); font-size: 14px; line-height: 1.85; }
+.hero-actions { margin-top: 28px; }
+.hero-actions > .text-link { display: none; }
+.hero-footnote { color: var(--muted); font-size: 10px; letter-spacing: 2px; margin-top: 25px; }
+.hero-art { margin: 0; padding: 0; min-width: 0; width: 100%; }
+.academy-books { position: relative; width: min(100%, 480px); min-height: 370px; margin-inline: auto; background: radial-gradient(ellipse at 50% 65%, #504230 0, transparent 65%); isolation: isolate; }
+.academy-volume { position: absolute; width: 44%; height: 300px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 25px 14px; color: var(--green); border: 1px solid #a3844e66; box-shadow: 12px 15px 24px #0005; border-radius: 1px 3px 3px 1px; }
+.academy-volume::before { content: ''; position: absolute; inset: 9px; border: 1px solid #bfa16a55; pointer-events: none; }
+.academy-volume::after { content: ''; position: absolute; left: 3px; top: 0; bottom: 0; border-left: 3px solid #0004; }
+.academy-back { background: #533c2c; left: 8%; top: 10px; }
+.academy-front { background: #252c27; left: 37%; top: 32px; z-index: 1; }
+.academy-author { font-size: 11px; letter-spacing: 2px; }
+.academy-title { font-family: var(--serif); font-size: clamp(22px, 2.5vw, 34px); line-height: 1.25; letter-spacing: 1px; margin: auto 0; }
+.academy-rule { width: 38px; height: 1px; background: var(--green); opacity: .5; margin-top: 18px; }
+.academy-edition { font-size: 9px; letter-spacing: 1px; margin-top: auto; padding-top: 12px; }
+.academy-spine { position: absolute; right: 4%; top: 48px; width: 30px; height: 280px; writing-mode: vertical-rl; padding: 15px 6px; background: #b39b6a; color: #211f18; box-shadow: 5px 10px 15px #0005; font-family: var(--serif); font-size: 11px; letter-spacing: 1.5px; display: flex; justify-content: space-between; }
+.academy-caption { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; font-size: 10px; letter-spacing: 2px; color: var(--muted); }
+.chapter-strip { display: none; }
+.chapter-strip > .section-wrap { color: var(--muted); }
+.collection .section-topline { margin-bottom: 14px; }
+.collection-count { color: var(--muted); font-size: 10px; }
+.filter { color: var(--muted); font-size: 11px; border-radius: 0; }
+.filter.active { background: #34382c; border-color: #6b6046; color: #e2c28d; }
+.filter span { background: #1d201d; color: var(--muted); }
+.book-cover-button:hover .cover-shell { transform: translateY(-4px); box-shadow: 3px 12px 20px #0005; }
+.book-info-top .lens-tag, .tag { background: #33372d; color: #ddc18d; }
+.book-number, .book-description, .book-footer { color: var(--muted); }
+.book-title-button { font-size: 20px; }
+.cover-shell { box-shadow: 3px 5px 12px #0004; }
+.book-grid.list-view { gap: 0; border-top: 1px solid var(--line); }
+.list-view .book-card { display: block; padding: 24px 0; }
+.list-view .book-cover-button { display: none; }
+.list-view .book-info { position: relative; padding: 0 35px 0 38px; }
+.list-view .book-info-top { display: contents; }
+.list-view .book-number { position: absolute; top: 5px; left: 0; font-family: var(--serif); color: var(--green); font-size: 12px; }
+.list-view .lens-tag { position: absolute; right: 35px; top: 4px; font-size: 10px; }
+.list-view .book-title-button { font-size: 24px; margin: 0; }
+.list-view .book-author { font-size: 12px; }
+.list-view .book-description { max-width: 750px; font-size: 13px; }
+.list-view .book-footer { padding-top: 12px; margin-top: 0; font-size: 11px; }
+.list-view .book-footer button { font-size: 12px; }
+.list-view .book-info::after { content: '↗'; position: absolute; right: 0; top: 0; color: var(--green); font-size: 19px; pointer-events: none; }
+.sample-note, .sample-label { color: var(--muted); font-size: 10px; }
+.sample-note button { font-size: 11px; border-color: #74664b; }
+.about-section, .learning-section { background: #232820; border-color: var(--line); }
+.portrait-inner { background: #2c3328; color: var(--green); border-color: #625c46; border-radius: 0; transform: none; }
+.portrait-stamp { background: #171a17; color: var(--green); border-color: #625c46; transform: none; }
+.about-copy > p, .about-copy .about-intro, .student-meta,
+.reader-expectation > p, .reader-expectation > span { color: var(--muted); }
+.reader-expectation { border-color: var(--green); }
+.favorite-art::before { width: 80%; height: 94%; border-radius: 0; background: #292d24; border: 1px solid var(--line); }
+.favorite-cover { transform: none; box-shadow: 7px 15px 20px #0005; }
+.favorite-sticker { right: 0; bottom: 9px; width: auto; height: auto; padding: 10px 16px; background: var(--paper-dark); color: var(--green); border: 1px solid #625c46; border-radius: 0; outline: none; transform: none; font-size: 10px; }
+.favorite-deck, .favorite-themes > span { color: var(--muted); }
+.favorite-themes > span { border-color: var(--line); border-radius: 0; font-size: 11px; }
+.learning-heading > p, .learning-card > p, .learning-icon > span,
+.learning-section .sample-label { color: var(--muted); }
+.learning-card { border-color: #625c46; }
+.learning-icon { color: var(--green); }
+.reflection-item summary > span:first-child, .reflection-item summary > span:last-child,
+.reflection-answer, .reflection-answer > strong { color: var(--muted); }
+.closing > .eyebrow, .site-footer > p, .site-footer > p > span, .footer-links { color: var(--muted); }
+dialog { border-color: #625c46; }
+dialog::backdrop { background: #080b08c9; }
+.reader-intro { color: #d8c19b; }
+.reader-section p { color: #d0c8b9; }
+.reader-sample { background: #30352b; color: var(--muted); }
+#portfolio-form input, #portfolio-form textarea, #portfolio-form select { background: #171a17; border-color: #625c46; color: var(--ink); }
+.editor-dialog code { background: #30352b; color: var(--ink); }
+.editor-status-error { color: #efaa97 !important; }
+input:focus, textarea:focus, select:focus { outline-color: var(--green); }
+@media (max-width: 1100px) {
+  .academy-books { min-height: 330px; }
+  .academy-volume { height: 267px; }
+  .academy-spine { height: 246px; }
+  .hero h1 { font-size: 51px; letter-spacing: -1.7px; }
+  .hero .eyebrow { font-size: 9px; letter-spacing: 1.5px; }
+  .hero-footnote { font-size: 9px; }
+}
+@media (max-width: 850px) {
+  .academy-books { min-height: 290px; }
+  .academy-volume { height: 233px; padding: 20px 12px; }
+  .academy-spine { height: 214px; width: 25px; padding: 12px 4px; font-size: 10px; }
+  .academy-title { font-size: 24px; }
+  .academy-author { font-size: 10px; }
+  .academy-edition { font-size: 8px; }
+  .hero h1 { font-size: 43px; }
+  .list-view .lens-tag { display: none; }
+}
+@media (max-width: 640px) {
+  .site-header { position: relative; }
+  .header-inner { min-height: 96px; height: auto; padding-block: 18px; flex-wrap: wrap; gap: 13px; }
+  .header-quick-nav { display: flex; order: 3; width: 100%; gap: 22px; font-size: 11px; }
+  .menu-toggle { margin-left: auto; color: var(--green); width: 44px; height: 44px; }
+  .brand { font-size: 28px; }
+  .hero { gap: 30px; min-height: 0; padding-block: 34px 28px; }
+  .hero .eyebrow { font-size: 9px; letter-spacing: 1.8px; line-height: 1.9; }
+  .hero h1 { font-size: clamp(39px, 9vw, 56px); line-height: 1.13; letter-spacing: -1.7px; margin: 21px 0; }
+  .hero-description { font-size: 12px; }
+  .hero-actions .button { font-size: 11px; padding: 13px 18px; }
+  .hero-footnote { font-size: 9px; letter-spacing: 1.6px; }
+  .hero-art { align-self: center; max-width: 360px; margin: 0; padding: 0; width: 100%; }
+  .academy-books { min-height: 280px; }
+  .academy-volume { height: 225px; padding: 20px 12px; }
+  .academy-back { top: 0; }
+  .academy-front { top: 20px; }
+  .academy-spine { top: 29px; height: 209px; }
+  .academy-title { font-size: clamp(18px, 5.7vw, 24px); }
+  .academy-author { font-size: 9px; }
+  .academy-edition { font-size: 8px; letter-spacing: .7px; }
+  .academy-caption { font-size: 9px; }
+  .chapter-strip > .section-wrap { font-size: 10px; height: 66px; }
+  .chapter-strip b { font-size: 18px; }
+  .collection .section-heading-row h2 { font-size: 24px; line-height: 1.3; }
+  .section-heading-row h2 em { display: inline; }
+  .collection-toolbar { flex-wrap: wrap; gap: 10px; align-items: center; }
+  .filter-group { flex: 1; gap: 3px; }
+  .filter { font-size: 10px; padding: 9px 7px; min-height: 36px; }
+  .view-toggle { width: 36px; height: 36px; min-width: 36px; }
+  .list-view .book-card { padding-block: 20px; }
+  .list-view .book-info { padding-left: 27px; padding-right: 18px; }
+  .list-view .book-title-button { font-size: 20px; min-height: 36px; }
+  .list-view .book-number { font-size: 10px; top: 10px; }
+  .list-view .book-description { font-size: 12px; }
+  .list-view .book-footer { gap: 10px; flex-wrap: wrap; }
+  .list-view .book-footer button { min-height: 36px; }
+  .book-author { font-size: 11px; }
+  .book-description { font-size: 11px; }
+  .collection-end > .small-note, #filter-count { font-size: 10px; }
+  .sample-note, .sample-label { font-size: 10px; }
+  .favorite-art { max-width: 100%; }
+  .learning-grid { grid-template-columns: 1fr; }
+  .learning-card h3 { font-size: 20px; }
+  .learning-card > p { font-size: 13px; }
+  .editor-tabs { gap: 14px; }
+  #portfolio-form input, #portfolio-form textarea, #portfolio-form select { font-size: 16px; }
+  .reader-section p { font-size: 14px; }
+  .reader-topbar > span { font-size: 8px; }
+}

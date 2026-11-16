@@ -11,7 +11,7 @@
   let state = emptyState();
   let draft;
   let currentFilter = 'all';
-  let isList = false;
+  let isList = true;
   let currentReading = 0;
   let currentWriting = 'whirlwind';
   let photoRemoved = false;
