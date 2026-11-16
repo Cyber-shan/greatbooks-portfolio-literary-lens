@@ -14,7 +14,7 @@
   let currentReading = 0;
 
   function validatedState(value) {
-    if (!value || typeof value !== 'object' || value.version !== 1) throw new Error('Choose a Marginalia portfolio backup (version 1).');
+    if (!value || typeof value !== 'object' || value.version !== 1) throw new Error('Choose a valid portfolio backup (version 1).');
     const next = emptyState();
     const strings = (target, source, keys, max = 50000) => {
       if (!source || typeof source !== 'object') return;

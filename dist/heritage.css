@@ -152,7 +152,7 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
 .site-header { border-bottom: 3px double var(--line); }
 .header-inner { height: 88px; }
 .brand { font-size: 28px; gap: 12px; }
-.site-header .brand::before { content: 'M'; display: grid; place-items: center; width: 32px; height: 38px; border: 1px solid var(--green); color: var(--green); font-size: 25px; letter-spacing: -1px; }
+.site-header .brand::before { content: 'P'; display: grid; place-items: center; width: 32px; height: 38px; border: 1px solid var(--green); color: var(--green); font-size: 25px; letter-spacing: -1px; }
 .hero { display: block; position: relative; isolation: isolate; overflow: hidden; min-height: 390px; padding: 44px 24px; text-align: center; border-bottom: 1px solid var(--line); }
 .hero .eyebrow { justify-content: center; color: var(--green); font-size: 10px; letter-spacing: 2px; }
 .hero h1 { font-size: clamp(39px, 4.9vw, 62px); font-weight: 600; letter-spacing: -1.6px; line-height: 1.12; margin: 21px 0; }
@@ -203,7 +203,7 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
 .reader-eyebrow .lens-tag { color: #6b4934; background: #e0d7c4; }
 .favorite-cover { box-shadow: 5px 10px 20px #263e3220; }
 .favorite-art::before { border-color: var(--line); }
-.site-footer .footer-brand { font-size: 27px; }
+.site-footer .footer-brand { font-size: 27px; gap: 0; }
 @media (max-width: 1000px) {
   .book-info { padding: 18px; }
   .book-title-button { font-size: 22px; }
