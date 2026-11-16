@@ -90,6 +90,16 @@ dialog { border-color: #625c46; }
 dialog::backdrop { background: #080b08c9; }
 .reader-intro { color: #d8c19b; }
 .reader-section p { color: #d0c8b9; }
+.reader-opening { display: grid; grid-template-columns: minmax(0, 1fr) 170px; align-items: start; gap: 28px; margin-top: 22px; }
+.reader-opening > div { min-width: 0; }
+.reader-opening h1 { margin-top: 0; font-size: 38px; }
+.reader-opening .reader-byline { border: 0; padding-bottom: 0; }
+.reader-eyebrow { flex-wrap: wrap; }
+.reader-eyebrow .lens-tag { background: #33372d; color: #ddc18d; font-size: 10px; flex-shrink: 0; }
+.reader-artwork { margin: 0; min-width: 0; }
+.reader-artwork img { width: 100%; height: auto; max-height: 290px; object-fit: contain; object-position: top center; box-shadow: 3px 5px 18px #0005; }
+.reader-artwork figcaption { color: var(--muted); font-size: 11px; line-height: 1.7; margin-top: 12px; }
+.reader-artwork figcaption a { display: block; color: var(--green); margin-top: 5px; text-decoration: underline; text-underline-offset: 3px; }
 .reader-sample { background: #30352b; color: var(--muted); }
 #portfolio-form input, #portfolio-form textarea, #portfolio-form select { background: #171a17; border-color: #625c46; color: var(--ink); }
 .editor-dialog code { background: #30352b; color: var(--ink); }
@@ -161,5 +171,9 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
   .editor-tabs { gap: 14px; }
   #portfolio-form input, #portfolio-form textarea, #portfolio-form select { font-size: 16px; }
   .reader-section p { font-size: 14px; }
+  .reader-opening { grid-template-columns: 1fr; gap: 24px; }
+  .reader-opening h1 { font-size: 34px; }
+  .reader-artwork { width: min(220px, 100%); margin-inline: auto; }
+  .reader-artwork img { max-height: 340px; }
   .reader-topbar > span { font-size: 8px; }
 }

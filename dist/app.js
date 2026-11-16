@@ -108,12 +108,18 @@
   }
   function renderAll(){renderBooks();renderProfile();renderFavorite();renderLearning();renderReflection();}
 
+  function readingOpening(book, favorite = false) {
+    const image = window.PORTFOLIO_IMAGES?.[book.id];
+    const artwork = image ? `<figure class="reader-artwork"><img src="${escapeHTML(image.src)}" alt="${escapeHTML(image.alt)}" decoding="async"><figcaption>${escapeHTML(image.caption)}<a href="${escapeHTML(image.source)}" target="_blank" rel="noopener noreferrer">${escapeHTML(image.credit)} ↗</a></figcaption></figure>` : '';
+    return `<div class="reader-opening"><div><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)}${favorite ? '' : ` <span aria-hidden="true">/</span> ${escapeHTML(book.readTime)}`}</p></div>${artwork}</div>`;
+  }
+
   function readBook(id, updateHash=true) {
     const all=analyses();
     const book=all.find(b=>b.id===id);
     if(!book)return;
     currentReading=all.indexOf(book);
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)} <span aria-hidden="true">/</span> ${escapeHTML(book.readTime)}</p>${book.custom?'':`<p class="reader-sample">AI-assisted draft. Review this interpretation against your class text and add your own insights before submitting.</p>`}<p class="reader-intro">${escapeHTML(book.overview)}</p>${book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Text & reference</h2>${book.sources?.length?book.sources.map(s=>`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.label)} ↗</a>`).join(''):'<p>Add the sources used in your analysis through the portfolio editor.</p>'}</section>`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div>${readingOpening(book)}${book.custom?'':`<p class="reader-sample">AI-assisted draft. Review this interpretation against your class text and add your own insights before submitting.</p>`}<p class="reader-intro">${escapeHTML(book.overview)}</p>${book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Text & reference</h2>${book.sources?.length?book.sources.map(s=>`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.label)} ↗</a>`).join(''):'<p>Add the sources used in your analysis through the portfolio editor.</p>'}</section>`;
     $('#reader-position').textContent=`${currentReading+1} of ${all.length}`;
     $('#previous-analysis').disabled=currentReading===0;
     $('#next-analysis').disabled=currentReading===all.length-1;
@@ -124,7 +130,7 @@
   function readFavorite() {
     const f=state.favorite, book=analyses().find(x=>x.id===f.work);
     currentReading=-1;
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)}</p>${f.custom?'':'<p class="reader-sample">AI-assisted draft favorite. Personalize these reasons and connections to match your own reading experience.</p>'}<p class="reader-intro">${escapeHTML(f.deck)}</p>${[{heading:'The story, in brief',body:f.overview},{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${readingOpening(book, true)}${f.custom?'':'<p class="reader-sample">AI-assisted draft favorite. Personalize these reasons and connections to match your own reading experience.</p>'}<p class="reader-intro">${escapeHTML(f.deck)}</p>${[{heading:'The story, in brief',body:f.overview},{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
     $('#reader-position').textContent='A personal favorite';
     $('#previous-analysis').disabled=true;$('#next-analysis').disabled=true;
     if(!$('#reader-dialog').open)$('#reader-dialog').showModal();
