@@ -94,7 +94,6 @@
   }
   function renderReflection() {
     $('#reflection-questions').innerHTML=state.reflection.map((item,i)=>`<details class="reflection-item" ${i===0?'open':''}><summary><span>0${i+1}</span><span>${escapeHTML(item.title)}</span><span aria-hidden="true">+</span></summary><div class="reflection-answer"><strong>${escapeHTML(content.reflection[i].question)}</strong><p>${escapeHTML(item.body)}</p></div></details>`).join('');
-    $('#reflection-sample').hidden=state.reflection.every(x=>x.custom);
   }
   function renderAll(){renderBooks();renderProfile();renderFavorite();renderLearning();renderReflection();}
 
@@ -109,7 +108,7 @@
     const book=all.find(b=>b.id===id);
     if(!book)return;
     currentReading=all.indexOf(book);
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div>${readingOpening(book)}${book.custom?'':`<p class="reader-sample">AI-assisted draft. Review this interpretation against your class text and add your own insights before submitting.</p>`}<p class="reader-intro">${escapeHTML(book.overview)}</p>${book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Text & reference</h2>${book.sources?.length?book.sources.map(s=>`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.label)} ↗</a>`).join(''):'<p>References are listed with the published analysis.</p>'}</section>`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div>${readingOpening(book)}<p class="reader-intro">${escapeHTML(book.overview)}</p>${book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Text & reference</h2>${book.sources?.length?book.sources.map(s=>`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.label)} ↗</a>`).join(''):'<p>References are listed with the published analysis.</p>'}</section>`;
     $('#reader-position').textContent=`${currentReading+1} of ${all.length}`;
     $('#previous-analysis').disabled=currentReading===0;
     $('#next-analysis').disabled=currentReading===all.length-1;
@@ -120,7 +119,7 @@
   function readFavorite() {
     const f=state.favorite, book=analyses().find(x=>x.id===f.work);
     currentReading=-1;
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${readingOpening(book, true)}${f.custom?'':'<p class="reader-sample">AI-assisted draft favorite. Personalize these reasons and connections to match your own reading experience.</p>'}<p class="reader-intro">${escapeHTML(f.deck)}</p>${[{heading:'The story, in brief',body:f.overview},{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${readingOpening(book, true)}<p class="reader-intro">${escapeHTML(f.deck)}</p>${[{heading:'The story, in brief',body:f.overview},{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
     $('#reader-position').textContent='A personal favorite';
     $('#previous-analysis').disabled=true;$('#next-analysis').disabled=true;
     if(!$('#reader-dialog').open)$('#reader-dialog').showModal();
