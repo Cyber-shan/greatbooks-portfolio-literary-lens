@@ -27,8 +27,8 @@ window.PORTFOLIO_CONTENT = {
         {
           "heading": "An answer that takes the form of questions",
           "paragraphs": [
-            "The arrival of the divine voice changes the structure of Job’s search. He has sought a hearing in which his suffering might receive an explanation. Instead, the response asks him to consider the foundations of the earth, the boundaries of the sea, and the workings of the heavens. The reversal is important: Job receives an encounter, but not the causal explanation that a reader might expect. The passage makes a distinction between being addressed and having every uncertainty resolved.",
-            "Through a theological lens, the repeated questions expose a difference between human knowledge and divine perspective. Their accumulation creates an experience of scale that a simple statement about limited understanding could not produce. Yet this does not establish that all human questions are worthless. Job’s questioning remains the condition of the encounter. The passage can therefore be read as a challenge to absolute certainty rather than an instruction never to ask difficult questions."
+            "The arrival of the divine voice changes the structure of Job’s search. He has sought a hearing in which his suffering might receive an explanation. Instead, the response asks him to consider the foundations of the earth, the boundaries of the sea, and the workings of the heavens. The reversal is important: Job receives an encounter, but not the causal explanation that a reader might expect. The passage distinguishes between being addressed and having every uncertainty resolved.",
+            "Through a theological lens, the repeated questions expose a difference between human knowledge and divine perspective. Together, these questions create a sense of scale that a simple statement about limited understanding could not produce. Yet this does not establish that all human questions are worthless. Job’s questioning remains the condition of the encounter. The passage can therefore be read as a challenge to absolute certainty rather than an instruction never to ask difficult questions."
           ]
         },
         {
@@ -78,14 +78,14 @@ window.PORTFOLIO_CONTENT = {
           "heading": "Why teach through a story?",
           "paragraphs": [
             "The Panchatantra’s instructional frame makes education part of its subject. Stories are offered as a way to develop judgment where conventional instruction has failed. This structure assumes that understanding does not always follow from receiving an abstract explanation. A memorable conflict lets a learner imagine a decision, anticipate its consequences, and reconsider it from a position of relative safety. Entertainment becomes a means of attention, which is itself necessary for learning.",
-            "A didactic reading therefore asks how the form teaches, not merely which moral appears at the end. Animal characters create a useful distance from everyday defensiveness. A reader can recognize vanity in a lion or calculation in a jackal before admitting similar habits in a human setting. The apparent simplicity makes difficult social behavior discussable without making the underlying lesson equally simple."
+            "A didactic reading therefore asks how the form teaches, not merely which moral appears at the end. Animal characters create a useful distance from everyday defensiveness. A reader can recognize vanity in a lion or calculation in a jackal before admitting similar habits in a human setting. This apparent simplicity makes difficult social behavior easier to discuss without reducing the complexity of the underlying lesson."
           ]
         },
         {
           "heading": "Friendship and the danger of interpretation",
           "paragraphs": [
             "In the first book’s central conflict, the friendship between a lion and a bull is undermined through manipulative speech. The damage depends on more than an openly spoken lie. Suspicion becomes persuasive when it attaches itself to a listener’s fear, pride, or insecurity. The story directs attention toward the conditions that allow misinformation to take hold: a powerful figure may still be vulnerable if authority has not been accompanied by self-knowledge.",
-            "The lesson concerns a responsibility shared by speaker and listener. Harmful advice is dangerous because it presents itself as concern, but its success also depends on accepting an interpretation without sufficient examination. Friendship requires trust, yet trust cannot mean abandoning discernment. The collection exposes this tension by showing how the desire for protection can be redirected into the destruction of the relationship that once offered security."
+            "The lesson highlights a responsibility shared by speaker and listener. Harmful advice is dangerous because it presents itself as concern, but its success also depends on accepting an interpretation without sufficient examination. Friendship requires trust, yet trust cannot mean abandoning discernment. The collection exposes this tension by showing how the desire for protection can be redirected into the destruction of the relationship that once offered security."
           ]
         },
         {
@@ -132,7 +132,7 @@ window.PORTFOLIO_CONTENT = {
           "heading": "Departure as a test of duty",
           "paragraphs": [
             "Rama’s departure from Ayodhya moves him from royal expectation into an uncertain world. An archetypal reading recognizes exile as a threshold: the familiar social order gives way to a space in which character must be demonstrated under pressure. The loss of anticipated power makes the journey more than an adventure. Rama’s identity is tested when maintaining a commitment requires accepting a personal cost rather than claiming an available reward.",
-            "The concept of dharma gives this pattern a cultural and ethical specificity that should not disappear into a universal formula. Duty involves relationships, social roles, and a vision of right conduct, rather than a single instruction that fits every circumstance. Reading archetypally is useful when it helps organize the journey; it becomes limiting when it replaces the work’s own questions with an assumed template of individual self-discovery."
+            "The concept of dharma gives this pattern a distinct cultural and ethical meaning that should not be reduced to a universal formula. Duty involves relationships, social roles, and a vision of right conduct, rather than a single instruction that fits every circumstance. Reading archetypally is useful when it helps organize the journey; it becomes limiting when it replaces the work’s own questions with an assumed template of individual self-discovery."
           ]
         },
         {
@@ -145,7 +145,7 @@ window.PORTFOLIO_CONTENT = {
         {
           "heading": "Sita exceeds the role of the rescued figure",
           "paragraphs": [
-            "Sita’s abduction can make her appear to occupy the familiar position of a person whose recovery motivates another character’s journey. Yet such a description is incomplete. Her resistance to Ravana, her insistence on her commitments, and her endurance under coercion make the interior defense of identity a significant form of action. Physical captivity does not eliminate the meaning of refusal.",
+            "Sita’s abduction can appear to place her in the familiar role of someone whose rescue motivates another character’s journey. Yet such a description is incomplete. Her resistance to Ravana, her insistence on her commitments, and her endurance under coercion make the interior defense of identity a significant form of action. Physical captivity does not eliminate the meaning of refusal.",
             "The demands placed upon Sita also complicate a triumphant reading of restoration. The ordeals surrounding her return raise difficult questions about reputation, public judgment, and the unequal burdens imposed on women. Versions and retellings of the Ramayana differ, so these episodes should be discussed with attention to the assigned text. The archetype of the faithful figure becomes most revealing when the reader asks what that role costs the person required to inhabit it."
           ]
         },
@@ -185,7 +185,7 @@ window.PORTFOLIO_CONTENT = {
         {
           "heading": "When duties come into conflict",
           "paragraphs": [
-            "The Mahabharata presents an ethical world in which knowing a rule does not guarantee knowing the right action. Characters must respond to overlapping obligations that cannot always be fulfilled together. A promise can preserve honor while exposing another person to harm; loyalty can protect a relationship while sustaining an injustice. The epic gives these contradictions narrative weight by allowing decisions to continue producing consequences long after the decisive moment has passed.",
+            "The Mahabharata presents an ethical world in which knowing a rule does not guarantee knowing the right action. Characters must respond to overlapping obligations that cannot always be fulfilled together. A promise can preserve honor while exposing another person to harm; loyalty can protect a relationship while sustaining an injustice. The epic gives these contradictions narrative weight by tracing the consequences of decisions long after the decisive moment has passed.",
             "An ethical lens therefore asks more than which side a character supports. It examines the reasons given, the alternatives available, and the people affected. Dharma is central to this inquiry, but translating it simply as obedience would flatten its complexity. The poem repeatedly makes right conduct a demanding problem of interpretation. Moral seriousness appears in the willingness to confront that problem, not in the ease with which someone claims righteousness."
           ]
         },
@@ -207,7 +207,7 @@ window.PORTFOLIO_CONTENT = {
           "heading": "Victory does not cancel responsibility",
           "paragraphs": [
             "The aftermath of war prevents the conflict from ending as a simple celebration of success. Loss reaches beyond the combatants to families and the wider community. The difference between winning a struggle and establishing a just order becomes unmistakable. A claim to a rightful cause cannot erase the need to mourn, examine methods, and care for those who must live with the result.",
-            "This makes the epic relevant to decisions far smaller than a war. Personal conviction is necessary, but it becomes dangerous when it makes a person unable to hear criticism or recognize harm. The ethical challenge is to act responsibly under uncertainty while remaining answerable afterward. The Mahabharata encourages judgment that is principled and self-questioning: defend what is right, examine how it is defended, and refuse to treat another person’s suffering as an irrelevant cost of being correct."
+            "This insight makes the epic relevant to decisions on a much smaller scale than war. Personal conviction is necessary, but it becomes dangerous when it makes a person unable to hear criticism or recognize harm. The ethical challenge is to act responsibly under uncertainty while remaining answerable afterward. The Mahabharata encourages judgment that is principled and self-questioning: defend what is right, examine how it is defended, and refuse to treat another person’s suffering as an irrelevant cost of being correct."
           ]
         }
       ],
@@ -239,7 +239,7 @@ window.PORTFOLIO_CONTENT = {
         {
           "heading": "When wounded honor becomes a public disaster",
           "paragraphs": [
-            "The opening dispute treats Briseis as a measure of competing male authority. Agamemnon's seizure humiliates Achilles, but both men's claims depend on a system in which a captive woman can become a transferable prize. An ethical reading therefore begins before deciding which warrior deserves sympathy. It asks whose dignity the dispute's familiar language makes easy to overlook.",
+            "The opening dispute treats Briseis as a measure of competing male authority. Agamemnon's seizure humiliates Achilles, but both men's claims depend on a system in which a captive woman can become a transferable prize. An ethical reading therefore begins by looking beyond the question of which warrior deserves sympathy. It asks whose dignity the dispute's familiar language makes easy to overlook.",
             "Achilles' withdrawal turns a personal injury into a collective crisis. His anger has an intelligible cause: the community's leader disregards the honor on which his service depends. Yet understanding that injury does not settle whether others should pay for it. The poem dramatizes a difficult distinction between having a legitimate grievance and taking responsibility for the consequences of one's response."
           ]
         },
@@ -247,7 +247,7 @@ window.PORTFOLIO_CONTENT = {
           "heading": "Heroism viewed from the household",
           "paragraphs": [
             "Hector's encounter with Andromache and their child brings the household into the heroic argument. She understands battle through the losses it threatens, while he feels the pressure of public duty and shame. Neither perspective can simply remove the other. Defending the city appears necessary, but the defense also places the family's remaining security in danger.",
-            "Their child's fear of Hector's helmet briefly interrupts the warrior's public image. The equipment that signifies honor becomes frightening when seen by someone who needs a father. This moment changes the scale of judgment. A reputation can be admired from a distance while its demands become painful within intimate life. The epic makes responsibility to a community inseparable from the vulnerable people who constitute it."
+            "Their child's fear of Hector's helmet briefly disrupts the warrior's public image. The equipment that signifies honor becomes frightening when seen by someone who needs a father. This moment changes the scale of judgment. A reputation can be admired from a distance while its demands become painful within intimate life. The epic makes responsibility to a community inseparable from the vulnerable people who constitute it."
           ]
         },
         {
@@ -343,7 +343,7 @@ window.PORTFOLIO_CONTENT = {
         {
           "heading": "Remembering an event through a later world",
           "paragraphs": [
-            "The poem reaches back to Charlemagne's Spanish campaign of 778, yet its developed account belongs to a later literary world. Einhard's Life of Charlemagne describes a mountain ambush by Gascons, commonly identified with the Basques, and names Roland among the dead. The epic transforms the encounter into a much larger conflict with a Muslim enemy and gives betrayal a central explanatory role.",
+            "The poem looks back to Charlemagne's Spanish campaign of 778, yet its account takes shape within a later literary world. Einhard's Life of Charlemagne describes a mountain ambush by Gascons, commonly identified with the Basques, and names Roland among the dead. The epic transforms the encounter into a much larger conflict with a Muslim enemy and gives betrayal a central explanatory role.",
             "The difference matters because the poem should not be used as a neutral record of the battle or of Islam. Its changes turn an unsettling military loss into a narrative with identifiable treachery, exemplary sacrifice, and eventual vindication. Historical reading examines what those transformations accomplish for an audience. Memory becomes an argument about the community's virtues rather than a transparent window onto what happened."
           ]
         },
@@ -351,7 +351,7 @@ window.PORTFOLIO_CONTENT = {
           "heading": "Loyalty and the danger within the community",
           "paragraphs": [
             "Ganelon's betrayal makes internal disloyalty more threatening than open opposition. Because relationships of service and obligation sustain the poem's political world, private resentment can endanger an entire force. His actions suggest that the security of the group depends partly on promises whose enforcement cannot be reduced to military strength. A powerful army remains vulnerable when the people entrusted with its purposes pursue concealed aims.",
-            "Roland stands at the opposite pole as a figure of unwavering service, but the contrast does not eliminate disagreement over how loyalty should be practiced. Fidelity can require more than willingness to die. It can also require preserving the lives of companions. The tension prevents the ideal of loyalty from becoming entirely simple, even within a poem that strongly affirms it."
+            "Roland stands at the opposite pole as a figure of unwavering service, but the contrast does not eliminate disagreement over how loyalty should be practiced. Fidelity can require more than a willingness to die. It can also require preserving the lives of companions. The tension prevents the ideal of loyalty from becoming entirely simple, even within a poem that strongly affirms it."
           ]
         },
         {
@@ -398,7 +398,7 @@ window.PORTFOLIO_CONTENT = {
           "heading": "Courtly beauty and unequal room to act",
           "paragraphs": [
             "Genji's charm, artistic gifts, and status make his attention appear valuable within the court's hierarchy. Yet those same advantages give him a freedom of movement and initiative that many women do not possess. A feminist reading asks how admiration can coexist with unequal bargaining power. The ability to inspire affection does not resolve the question of whether another person can refuse, negotiate, or leave.",
-            "Rank makes that inequality more complicated than a single division between men and women. Family connections, reputation, and access to protection shape different possibilities for different women. The novel's attention to these distinctions prevents a reading that treats every female character as interchangeable. Gender matters through concrete arrangements of dependence and prestige, rather than operating as an isolated explanation for every emotion or decision."
+            "Differences in rank make that inequality more complex than a simple division between men and women. Family connections, reputation, and access to protection shape different possibilities for different women. The novel's attention to these distinctions prevents a reading that treats every female character as interchangeable. Gender matters through concrete arrangements of dependence and prestige, rather than operating as an isolated explanation for every emotion or decision."
           ]
         },
         {
@@ -412,7 +412,7 @@ window.PORTFOLIO_CONTENT = {
           "heading": "Affection and the wish to shape another person",
           "paragraphs": [
             "Genji's relationship with the character Murasaki exposes a troubling overlap between attachment and control. His early interest in her is connected to his desire for someone resembling Fujitsubo, and his influence over her upbringing creates an unequal foundation for their later life together. A feminist interpretation asks whether being cherished can coexist with having one's identity shaped around another person's wishes.",
-            "The answer requires careful attention rather than a single label that exhausts the relationship. Murasaki's feelings and intelligence give her a life beyond the role Genji imagines. Her importance to him does not necessarily give her equal authority over their shared arrangements. The narrative's emotional force lies partly in this difference between being indispensable to someone's happiness and possessing secure freedom to determine one's own."
+            "Answering this question requires careful attention rather than a single label that claims to explain the entire relationship. Murasaki's feelings and intelligence give her a life beyond the role Genji imagines. Her importance to him does not necessarily give her equal authority over their shared arrangements. The narrative's emotional force lies partly in this difference between being indispensable to someone's happiness and possessing secure freedom to determine one's own."
           ]
         },
         {

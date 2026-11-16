@@ -226,6 +226,32 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
 .favorite-cover { box-shadow: 5px 10px 20px #263e3220; }
 .favorite-art::before { border-color: var(--line); }
 .site-footer .footer-brand { font-size: 27px; gap: 0; }
+/* Explicit academic structure for the seven revised readings. */
+.analysis-title-label { margin: 0 0 12px; font: 10px/1.6 var(--sans); letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+.analysis-metadata { display: grid; gap: 12px; margin: 24px 0 0; padding-block: 17px; border-block: 1px solid var(--line); }
+.analysis-metadata > div { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 14px; align-items: baseline; }
+.analysis-metadata dt { font: 10px/1.8 var(--sans); letter-spacing: .7px; text-transform: uppercase; color: var(--muted); }
+.analysis-metadata dd { margin: 0; font: 13px/1.8 var(--sans); color: var(--ink); }
+.analysis-context { margin-top: 14px; font: 11px/1.8 var(--sans); color: var(--muted); }
+.analysis-context > span { margin-inline: 5px; }
+.analysis-introduction { margin-top: 28px; }
+.analysis-introduction h2 { font: 11px/1.8 var(--sans); letter-spacing: 1.2px; text-transform: uppercase; color: var(--green); }
+.reader-opening .analysis-introduction .reader-intro { margin: 12px 0 0; }
+.organized-analysis, .analysis-conclusion { max-width: 700px; margin-inline: auto; }
+.organized-analysis > h2, .analysis-conclusion > h2 { font-size: 27px; line-height: 1.4; letter-spacing: -.6px; }
+.organized-analysis > .reader-section { margin-top: 28px; }
+.organized-analysis .reader-section h3 { font-size: 23px; line-height: 1.45; letter-spacing: -.4px; margin: 0 0 16px; }
+.analysis-conclusion { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
+.analysis-conclusion p { margin-top: 16px; font: 14px/2 var(--sans); color: #4c5145; }
+@media (max-width: 820px) {
+  .reader-opening .analysis-introduction { order: 2; margin-top: 0; }
+}
+@media (max-width: 480px) {
+  .analysis-metadata > div { grid-template-columns: 88px minmax(0, 1fr); gap: 10px; }
+  .analysis-metadata dd { font-size: 12px; }
+  .organized-analysis > h2, .analysis-conclusion > h2 { font-size: 25px; }
+  .organized-analysis .reader-section h3 { font-size: 21px; }
+}
 @media (max-width: 1000px) {
   .book-info { padding: 18px; }
   .book-title-button { font-size: 22px; }

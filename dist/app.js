@@ -97,10 +97,23 @@
   }
   function renderAll(){renderBooks();renderProfile();renderFavorite();renderLearning();renderReflection();}
 
-  function readingOpening(book, favorite = false, introduction = book.overview) {
+  function readingOpening(book, favorite = false, introduction = book.overview, organized = false) {
     const image = window.PORTFOLIO_IMAGES?.[book.id];
     const artwork = image ? `<figure class="reader-artwork"><img src="${escapeHTML(image.src)}" alt="${escapeHTML(image.alt)}" decoding="async"><figcaption>${escapeHTML(image.caption)}<a href="${escapeHTML(image.source)}" target="_blank" rel="noopener noreferrer">${escapeHTML(image.credit)} ↗</a></figcaption></figure>` : '';
+    if (organized) return `<div class="reader-opening"><div class="reader-opening-copy"><header class="reader-opening-header"><p class="analysis-title-label">Literary masterpiece</p><h1 id="reader-title">${escapeHTML(book.title)}</h1><dl class="analysis-metadata"><div><dt>Author</dt><dd>${escapeHTML(book.author)}</dd></div><div><dt>Literary lens</dt><dd>${escapeHTML(book.lens)}</dd></div></dl><p class="analysis-context">${escapeHTML(book.year)} <span aria-hidden="true">·</span> ${escapeHTML(book.readTime)}</p></header><section class="analysis-introduction" aria-labelledby="analysis-introduction-title"><h2 id="analysis-introduction-title">Introduction</h2><p class="reader-intro">${escapeHTML(introduction)}</p></section></div>${artwork}</div>`;
     return `<div class="reader-opening"><div class="reader-opening-copy"><header class="reader-opening-header"><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)}${favorite ? '' : ` <span aria-hidden="true">/</span> ${escapeHTML(book.readTime)}`}</p></header><p class="reader-intro">${escapeHTML(introduction)}</p></div>${artwork}</div>`;
+  }
+
+  function organizedAnalysis(book) {
+    // The original closing paragraph becomes the conclusion. Keep every
+    // paragraph in its existing order and preserve the argument of each work.
+    const lastSection = book.sections.at(-1);
+    const conclusion = lastSection?.paragraphs.length > 1 ? lastSection.paragraphs.at(-1) : '';
+    const sections = book.sections.map((section, index) => {
+      const paragraphs = conclusion && index === book.sections.length - 1 ? section.paragraphs.slice(0, -1) : section.paragraphs;
+      return `<section class="reader-section"><h3>${escapeHTML(section.heading)}</h3>${paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`;
+    }).join('');
+    return `<section class="organized-analysis" aria-labelledby="literary-analysis-title"><h2 id="literary-analysis-title">Literary analysis</h2>${sections}</section>${conclusion ? `<section class="analysis-conclusion" aria-labelledby="analysis-conclusion-title"><h2 id="analysis-conclusion-title">Conclusion</h2><p>${escapeHTML(conclusion)}</p></section>` : ''}`;
   }
 
   function readBook(id, updateHash=true) {
@@ -108,7 +121,8 @@
     const book=all.find(b=>b.id===id);
     if(!book)return;
     currentReading=all.indexOf(book);
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div>${readingOpening(book)}${book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Text & reference</h2>${book.sources?.length?book.sources.map(s=>`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.label)} ↗</a>`).join(''):'<p>References are listed with the published analysis.</p>'}</section>`;
+    const organized = book.id !== 'odyssey';
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div>${readingOpening(book, false, book.overview, organized)}${organized ? organizedAnalysis(book) : book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Text & reference</h2>${book.sources?.length?book.sources.map(s=>`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.label)} ↗</a>`).join(''):'<p>References are listed with the published analysis.</p>'}</section>`;
     $('#reader-position').textContent=`${currentReading+1} of ${all.length}`;
     $('#previous-analysis').disabled=currentReading===0;
     $('#next-analysis').disabled=currentReading===all.length-1;
