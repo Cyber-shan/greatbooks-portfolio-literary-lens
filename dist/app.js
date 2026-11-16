@@ -63,7 +63,6 @@
     $('#book-grid').classList.toggle('list-view',isList);
     $('#book-grid').innerHTML = shown.map(book=>`<article class="book-card"><button class="book-cover-button" data-read="${book.id}" aria-label="Read ${escapeHTML(book.title)} literary analysis">${cover(book)}<span class="book-hover"><span>Open the reading ↗</span></span></button><div class="book-info"><div class="book-info-top"><span class="lens-tag">${escapeHTML(book.lens)} lens</span><span class="book-number">${book.number}</span></div><button class="book-title-button" data-read="${book.id}">${escapeHTML(book.title)}</button><p class="book-author">${escapeHTML(book.author)}</p><p class="book-description">${escapeHTML(book.shortDescription)}</p><div class="book-footer"><span>${escapeHTML(book.readTime)}</span><button data-read="${book.id}" aria-label="Read analysis of ${escapeHTML(book.title)}">Read analysis ↗</button></div></div></article>`).join('');
     $('#filter-count').textContent = currentFilter==='all'?`Showing all ${content.analyses.length} masterpieces`:`Showing ${shown.length} of ${content.analyses.length} masterpieces`;
-    $('#collection-sample-note').hidden = analyses().every(x=>x.custom);
   }
   function renderProfile() {
     const p={...state.profile,name:content.profile.name,photo:content.profile.photo};
@@ -87,13 +86,11 @@
     $('#favorite-deck').textContent=f.deck;
     $('#favorite-description').textContent=f.overview;
     $('.favorite-themes').innerHTML=f.themes.split(',').map(s=>s.trim()).filter(Boolean).map(t=>`<span>${escapeHTML(t)}</span>`).join('');
-    $('#favorite-sample').hidden=f.custom;
     $('.favorite .handwritten').hidden=f.work!=='odyssey';
   }
   function renderLearning() {
     const icons=['◎','⌘','✧','↗'];
     $('#learning-grid').innerHTML=state.learning.map((item,i)=>`<article class="learning-card"><div class="learning-icon" aria-hidden="true">${icons[i]}<span>0${i+1}</span></div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.body)}</p></article>`).join('');
-    $('#learning-sample').hidden=state.learning.every(x=>x.custom);
   }
   function renderReflection() {
     $('#reflection-questions').innerHTML=state.reflection.map((item,i)=>`<details class="reflection-item" ${i===0?'open':''}><summary><span>0${i+1}</span><span>${escapeHTML(item.title)}</span><span aria-hidden="true">+</span></summary><div class="reflection-answer"><strong>${escapeHTML(content.reflection[i].question)}</strong><p>${escapeHTML(item.body)}</p></div></details>`).join('');
