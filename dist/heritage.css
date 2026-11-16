@@ -226,20 +226,6 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
 .favorite-cover { box-shadow: 5px 10px 20px #263e3220; }
 .favorite-art::before { border-color: var(--line); }
 .site-footer .footer-brand { font-size: 27px; gap: 0; }
-.book-access { margin: 22px 0 26px; }
-.book-read-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 100%; padding: 12px 17px; background: #263e32; color: var(--paper); font: 12px/1.6 var(--sans); text-decoration: none; }
-.book-read-link:hover { background: #365441; }
-.book-read-link:focus-visible, .book-edition-link:focus-visible, .passage-references a:focus-visible, .reference-list a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
-.book-edition-link { display: block; width: fit-content; margin-top: 14px; font: 12px/1.8 var(--sans); color: var(--green); text-underline-offset: 4px; }
-.book-edition { max-width: 58ch; margin: 14px 0 0; font: 11px/1.8 var(--sans); color: #686252; }
-.passage-references { display: grid; gap: 9px; margin: 24px 0 0; padding: 14px 0 0 16px; border-left: 2px solid var(--line); font: 12px/1.7 var(--sans); }
-.passage-references > span { color: #686252; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; }
-.passage-references a { width: fit-content; color: var(--green); text-underline-offset: 4px; }
-.reference-list { display: grid; gap: 22px; padding-left: 22px; margin: 24px 0 0; font: 12px/1.8 var(--sans); color: #686252; }
-.reader-sources .reference-list a { display: inline; margin: 0; color: var(--green); line-height: 1.8; }
-.reader-sources .reference-list p, .reader-sources .reference-context { font: 12px/1.8 var(--sans); color: #686252; }
-.reader-sources .reference-list p { margin: 6px 0 0; }
-.book-access a, .passage-references a, .reference-list a { overflow-wrap: anywhere; }
 @media (max-width: 1000px) {
   .book-info { padding: 18px; }
   .book-title-button { font-size: 22px; }

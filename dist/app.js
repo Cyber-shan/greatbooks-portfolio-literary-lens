@@ -55,9 +55,7 @@
     catch { /* Keep published content when a saved draft is unavailable. */ }
   }
   loadLocal();
-  // Keep reviewed readings and their evidence together, including in browsers
-  // that still contain drafts from the retired editor. Stored drafts are retained.
-  const analyses = () => content.analyses;
+  const analyses = () => content.analyses.map(book=>({...book,...state.analyses[book.id]}));
   const cover = (book, favorite = false) => `<div class="cover-shell"><img src="assets/covers/${book.id}.svg" alt="" ${favorite?'':'loading="lazy"'} width="600" height="800"><div class="cover-copy"><span class="cover-number">${book.number} / GREAT BOOKS</span><span class="cover-title">${escapeHTML(book.title)}</span><span class="cover-author">${escapeHTML(book.author)}</span><span class="cover-edition">THE LITERARY COLLECTION</span></div></div>`;
 
   function renderBooks() {
@@ -99,15 +97,10 @@
   }
   function renderAll(){renderBooks();renderProfile();renderFavorite();renderLearning();renderReflection();}
 
-  const externalLink = (source, className = '') => `<a${className ? ` class="${className}"` : ''} href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.label)} <span aria-hidden="true">↗</span></a>`;
-  const passageReferences = section => `<div class="passage-references"><span>Passage references</span>${section.citations.map(source => externalLink(source)).join('')}</div>`;
-  function bookReferences(book) {
-    return `<section class="reader-sources"><h2>Text & references</h2><p class="reference-context">These texts support the story details. Literary arguments and personal connections are interpretations of the text.</p><ol class="reference-list">${book.sources.map(source => `<li>${externalLink(source)}${source.note ? `<p>${escapeHTML(source.note)}</p>` : ''}</li>`).join('')}</ol></section>`;
-  }
   function readingOpening(book, favorite = false, introduction = book.overview) {
     const image = window.PORTFOLIO_IMAGES?.[book.id];
     const artwork = image ? `<figure class="reader-artwork"><img src="${escapeHTML(image.src)}" alt="${escapeHTML(image.alt)}" decoding="async"><figcaption>${escapeHTML(image.caption)}<a href="${escapeHTML(image.source)}" target="_blank" rel="noopener noreferrer">${escapeHTML(image.credit)} ↗</a></figcaption></figure>` : '';
-    return `<div class="reader-opening"><div class="reader-opening-copy"><header class="reader-opening-header"><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)}${favorite ? '' : ` <span aria-hidden="true">/</span> ${escapeHTML(book.readTime)}`}</p><div class="book-access">${externalLink(book.bookLink, 'book-read-link')}${book.additionalBookLink ? externalLink(book.additionalBookLink, 'book-edition-link') : ''}<p class="book-edition">${escapeHTML(book.edition)}</p></div></header><p class="reader-intro">${escapeHTML(introduction)}</p></div>${artwork}</div>`;
+    return `<div class="reader-opening"><div class="reader-opening-copy"><header class="reader-opening-header"><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)}${favorite ? '' : ` <span aria-hidden="true">/</span> ${escapeHTML(book.readTime)}`}</p></header><p class="reader-intro">${escapeHTML(introduction)}</p></div>${artwork}</div>`;
   }
 
   function readBook(id, updateHash=true) {
@@ -115,7 +108,7 @@
     const book=all.find(b=>b.id===id);
     if(!book)return;
     currentReading=all.indexOf(book);
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div>${readingOpening(book)}${book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}${passageReferences(s)}</section>`).join('')}${bookReferences(book)}`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow"><span>${book.number} / THE LITERARY COLLECTION</span><span class="lens-tag">${escapeHTML(book.lens)} lens</span></div>${readingOpening(book)}${book.sections.map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Text & reference</h2>${book.sources?.length?book.sources.map(s=>`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.label)} ↗</a>`).join(''):'<p>References are listed with the published analysis.</p>'}</section>`;
     $('#reader-position').textContent=`${currentReading+1} of ${all.length}`;
     $('#previous-analysis').disabled=currentReading===0;
     $('#next-analysis').disabled=currentReading===all.length-1;
@@ -126,7 +119,7 @@
   function readFavorite() {
     const f=state.favorite, book=analyses().find(x=>x.id===f.work);
     currentReading=-1;
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${readingOpening(book, true, f.deck)}${[{heading:'The story, in brief',body:f.overview},{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}${bookReferences(book)}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${readingOpening(book, true, f.deck)}${[{heading:'The story, in brief',body:f.overview},{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
     $('#reader-position').textContent='A personal favorite';
     $('#previous-analysis').disabled=true;$('#next-analysis').disabled=true;
     if(!$('#reader-dialog').open)$('#reader-dialog').showModal();
@@ -185,8 +178,7 @@
   addEventListener('hashchange',openHash);
   renderAll();openHash();
   // The optional file is created by exporting a portfolio and adding it to dist/.
-  // Local profile and reflection drafts take priority. Reviewed readings above
-  // always come from the published content and retain their passage references.
+  // Local drafts take priority, so edits are never overwritten on refresh.
   if(!localStorageHasDraft()){
     fetch('portfolio.json',{cache:'no-cache'}).then(response=>response.ok?response.json():null).then(value=>{if(value&&!localStorageHasDraft()){state=validatedState(value);renderAll();openHash();}}).catch(()=>{});
   }
