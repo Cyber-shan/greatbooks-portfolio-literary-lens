@@ -76,7 +76,7 @@
     });
     const portrait=$('#profile-portrait');
     if(!portrait.dataset.default) portrait.dataset.default=portrait.innerHTML;
-    portrait.innerHTML=p.photo?`<img src="${p.photo}" alt="Portrait of ${escapeHTML(p.name||'the portfolio author')}">`:portrait.dataset.default;
+    portrait.innerHTML=p.photo?`<div class="portrait-photo"><img src="${p.photo}" alt="Portrait of ${escapeHTML(p.name||'the portfolio author')} seated outdoors" width="1200" height="1600"></div>`:portrait.dataset.default;
   }
   function renderFavorite() {
     const f=state.favorite;

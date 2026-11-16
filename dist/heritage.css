@@ -194,9 +194,10 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
 .about-copy h2 { font-size: 34px; color: var(--ink); }
 .student-meta { font-size: 10px; line-height: 1.8; }
 .reader-portrait { max-width: 310px; margin-left: 20px; }
-.portrait-inner { height: 310px; background: #fff; padding: 16px; border-color: #c4b79e; }
-.portrait-inner > img { width: 100%; height: 100%; object-fit: contain; }
-.portrait-stamp { right: -18px; bottom: -16px; font-size: 10px; background: var(--paper); }
+.portrait-inner { display: block; height: 385px; background: #f5efe2; padding: 12px; border-color: #b5a58b; box-shadow: 6px 10px 24px #263e3212; }
+.portrait-photo { width: 100%; height: 100%; overflow: hidden; background: #263e32; }
+.portrait-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; transform: scale(1.5); transform-origin: 50% 100%; filter: saturate(.78) sepia(.10) contrast(.97) brightness(.99); }
+.portrait-stamp { left: -14px; right: auto; bottom: -16px; font-size: 10px; background: var(--paper); }
 .reader-artwork img { box-shadow: 3px 5px 16px #263e321a; }
 .reader-section p { color: #4c5145; }
 .reader-eyebrow .lens-tag { color: #6b4934; background: #e0d7c4; }
@@ -232,7 +233,7 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
   .list-view .book-card { padding: 20px 15px; }
   .list-view .book-info { min-height: 0; }
   .reader-portrait { width: 250px; max-width: calc(100% - 20px); }
-  .portrait-inner { height: 270px; padding: 12px; }
+  .portrait-inner { height: 310px; padding: 10px; }
   .about-copy h2 { font-size: 31px; }
   .reader-topbar > span { font-size: 8px; }
 }
