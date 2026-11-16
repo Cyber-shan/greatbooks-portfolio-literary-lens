@@ -1,0 +1,18 @@
+# Reading sources reviewed 17 November 2026
+
+The published analyses are original literary interpretations. Primary texts support episode summaries and textual details; contemporary applications remain interpretations rather than claims made by the hosting institutions. `dist/content.js` stores the edition, book-access link, bibliography, and passage references together for each reading. The reader uses that published set even if a browser retains drafts from the former editor. Drafts are not deleted.
+
+| Reading | Primary edition and evidence checked |
+| --- | --- |
+| The Voice from the Whirlwind | King James Version of Job 38–42, Bible Gateway. Job 38:25–41 and 39 cover nonhuman creation; 40–41 describe Behemoth and Leviathan; 42:7–9 rebukes the friends. The portfolio title identifies a selection, not an independent biblical book. |
+| The Panchatantra | Arthur W. Ryder, 1925, Purnabhadra recension; Wikisource transcription and Frances Pritchett’s scans. Introduction: three princes and six months of instruction. Book I: Rusty, Lively, Victor, and Cheek are Ryder’s English names. The Foolish Friend includes the inset monkey story, Cheek’s criticism, and the lion’s regret. |
+| The Ramayana | ValmikiRamayan.net translation by Desiraju Hanumanta Rao and K. M. K. Murthy; the cited books II, V, VI are Murthy’s. Ayodhya 19, Sundara 21 and 36, Yuddha 118 and 128. The site contains books I–VI. The analysis does not rely on Uttara Kanda or conflate later retellings with this edition. Direct prose links avoid the site’s legacy frames. |
+| The Mahabharata | K. M. Ganguli, 1883–1896; Internet Sacred Text Archive’s eighteen-book index and Wikisource Sabha Parva LXVI–LXVII. Draupadi’s question and the objections by Vikarna and Vidura are explicit. IIT Kanpur Heritage provides Gita chapter 1 and verse 2.47, distinct from a link to the full epic. Stri Parva XVII supplies the mourning scene. |
+| The Iliad | Samuel Butler, MIT Internet Classics Archive. Books 1, 6, 16, 22, 24. Attribution changed from Pope to Butler to match the linked text. The portfolio uses Greek names where Butler sometimes uses Roman equivalents. |
+| The Odyssey | Samuel Butler, MIT Internet Classics Archive. Books 2, 5, 9, 22–24. Odysseus and Athena appear as Ulysses and Minerva in this translation. |
+| The Song of Roland | Charles Scott Moncrieff, 1919, full poem on Wikisource. Einhard’s Life of Charlemagne, chapter 9, Samuel Epes Turner translation at Fordham, is a separate historical comparison. The poem’s fictional religious portrayals are not treated as factual descriptions of Islam. |
+| The Tale of Genji | Arthur Waley’s first volume, 1925, Wikisource, chapters 1–9. The analysis is explicitly limited to those chapters. Chapters 1, 3–5, 9 support the episodes discussed. A separate Penguin publisher link identifies Royall Tyler’s complete edition; it is not labeled free full text. Columbia and the Met provide historical context. |
+
+Source URLs are present in the published content and rendered as ordinary external links. Passage links identify a book, chapter, or verse; the Roland full-text links describe an episode without inventing anchors or mixing stanza numbering between translations.
+
+Verification combined reading the source pages with network checks and local browser checks. Project Gutenberg returned maintenance responses during this review, so the principal reading links use available alternatives. Internet Sacred Text Archive content was readable through indexed web access but direct automated requests encountered its Cloudflare challenge. This is recorded as an automated-check limitation, not a successful HTTP check. External publishers can change access after this review.
