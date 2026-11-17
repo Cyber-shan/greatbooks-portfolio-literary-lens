@@ -6,7 +6,7 @@
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const storageKey = 'marginalia-portfolio-v1';
   const groups = { identity: ['whirlwind', 'odyssey', 'genji'], society: ['panchatantra', 'mahabharata', 'iliad', 'roland', 'genji'], journey: ['ramayana', 'odyssey', 'whirlwind'] };
-  const defaultFavorite = {"work":"odyssey","deck":"The longest journey is learning what it really means to come home.","overview":"After the Trojan War, Odysseus spends years struggling to return to Ithaca. Monsters, temptations, and divine conflict delay him, while Penelope and Telemachus face their own trials at home. The epic turns a voyage into a searching question about identity, belonging, and responsibility.","reasons":"I would choose The Odyssey because its idea of achievement reaches beyond winning a conflict. Odysseus has already helped defeat Troy, yet that victory does not give him a settled life. He must still learn how to return, how to recognize the people who matter to him, and how to recover his place without assuming that the world has waited unchanged. That makes the epic meaningful to a student approaching the end of a degree: finishing a major task is a beginning as well as an ending.\n\nI am drawn to the tension between intelligence and restraint. The escape from the Cyclops depends on cleverness, but Odysseus’s desire to announce his name creates a new danger. The same person can solve an immediate problem and damage the larger goal. This is a useful challenge to any simple definition of competence. Being capable requires attention to consequences, rather than confidence alone.","lessons":"Homecoming, endurance, identity, and hospitality give the epic its emotional depth. Penelope’s careful questioning shows that trust can involve both love and judgment. Her test of the marriage bed makes recognition depend on shared knowledge, not simply on a convincing appearance. Telemachus also develops through asking questions and learning how to act in uncertain circumstances.\n\nHospitality is especially striking because the treatment of a stranger reveals the moral character of a household. A visitor’s status may be hidden, so care cannot depend entirely on knowing whom one is helping. At the same time, the poem’s violence and unequal treatment of servants deserve scrutiny. Appreciating an ancient work includes noticing the boundaries of its moral vision. These complications make The Odyssey more valuable to discuss, rather than less.","connection":"As a fourth-year BSCIS student, I can connect the epic’s questions to the transition from completing academic requirements to taking responsibility for work that affects others. A solution may be technically clever while still creating new problems if its wider consequences are ignored. Odysseus’s encounter with the Cyclops gives me a concrete literary example of that difference.\n\nThe idea of homecoming also encourages me to think about what success is meant to serve. Skills, recognition, and future opportunities matter more when they support a meaningful life and responsible relationships. I would personalize this reflection further with a real project or decision from my own experience. The lesson I want to carry forward is to combine resourcefulness with humility: understand the destination, consider the people affected, and be willing to change the route.","themes":"Homecoming, Identity, Responsibility","custom":false};
+  const defaultFavorite = content.favorite;
   const emptyState = () => ({ version: 1, profile: { ...content.profile }, analyses: {}, favorite: { ...defaultFavorite }, learning: content.learning.map(x => ({...x, custom:false})), reflection: content.reflection.map(x => ({...x, custom:false})) });
   let state = emptyState();
   let currentFilter = 'all';
@@ -55,6 +55,13 @@
     catch { /* Keep published content when a saved draft is unavailable. */ }
   }
   loadLocal();
+  function usePublishedWriting() {
+    // The editor is retired. Show the current published revision while leaving
+    // any old browser backup untouched in localStorage.
+    const published = emptyState();
+    ['profile', 'analyses', 'favorite', 'learning', 'reflection'].forEach(key => { state[key] = published[key]; });
+  }
+  usePublishedWriting();
   const analyses = () => content.analyses.map(book=>({...book,...state.analyses[book.id]}));
   const cover = (book, favorite = false) => `<div class="cover-shell"><img src="assets/covers/${book.id}.svg" alt="" ${favorite?'':'loading="lazy"'} width="600" height="800"><div class="cover-copy"><span class="cover-number">${book.number} / GREAT BOOKS</span><span class="cover-title">${escapeHTML(book.title)}</span><span class="cover-author">${escapeHTML(book.author)}</span><span class="cover-edition">THE LITERARY COLLECTION</span></div></div>`;
 
@@ -93,7 +100,7 @@
     $('#learning-grid').innerHTML=state.learning.map((item,i)=>`<article class="learning-card"><div class="learning-icon" aria-hidden="true">${icons[i]}<span>0${i+1}</span></div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.body)}</p></article>`).join('');
   }
   function renderReflection() {
-    $('#reflection-questions').innerHTML=state.reflection.map((item,i)=>`<details class="reflection-item" ${i===0?'open':''}><summary><span>0${i+1}</span><span>${escapeHTML(item.title)}</span><span aria-hidden="true">+</span></summary><div class="reflection-answer"><strong>${escapeHTML(content.reflection[i].question)}</strong><p>${escapeHTML(item.body)}</p></div></details>`).join('');
+    $('#reflection-questions').innerHTML=state.reflection.map((item,i)=>`<details class="reflection-item" ${i===0?'open':''}><summary><span>0${i+1}</span><span>${escapeHTML(item.title)}</span><span aria-hidden="true">+</span></summary><div class="reflection-answer"><strong>${escapeHTML(content.reflection[i].question)}</strong>${item.body.split(/\n\s*\n/).map(paragraph=>`<p>${escapeHTML(paragraph)}</p>`).join('')}</div></details>`).join('');
   }
   function renderAll(){renderBooks();renderProfile();renderFavorite();renderLearning();renderReflection();}
 
@@ -141,7 +148,7 @@
   function readFavorite() {
     const f=state.favorite, book=analyses().find(x=>x.id===f.work);
     currentReading=-1;
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${favoriteOpening(book, f)}${[{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${favoriteOpening(book, f)}${[{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}${f.sources?.length ? `<section class="reader-sources"><h2>Passages discussed</h2>${f.sources.map(source=>`<a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.label)} ↗</a>`).join('')}<p class="favorite-source-note">${escapeHTML(f.sourceNote)}</p></section>` : ''}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
     $('#reader-position').textContent='A personal favorite';
     $('#previous-analysis').disabled=true;$('#next-analysis').disabled=true;
     if(!$('#reader-dialog').open)$('#reader-dialog').showModal();
@@ -200,9 +207,9 @@
   addEventListener('hashchange',openHash);
   renderAll();openHash();
   // The optional file is created by exporting a portfolio and adding it to dist/.
-  // Local drafts take priority, so edits are never overwritten on refresh.
+  // Published writing takes priority over backups from the retired editor.
   if(!localStorageHasDraft()){
-    fetch('portfolio.json',{cache:'no-cache'}).then(response=>response.ok?response.json():null).then(value=>{if(value&&!localStorageHasDraft()){state=validatedState(value);renderAll();openHash();}}).catch(()=>{});
+    fetch('portfolio.json',{cache:'no-cache'}).then(response=>response.ok?response.json():null).then(value=>{if(value&&!localStorageHasDraft()){state=validatedState(value);usePublishedWriting();renderAll();openHash();}}).catch(()=>{});
   }
   function localStorageHasDraft(){try{return !!localStorage.getItem(storageKey);}catch{return false;}}
 })();

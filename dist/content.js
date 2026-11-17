@@ -5,9 +5,9 @@ window.PORTFOLIO_CONTENT = {
     "photo": "assets/shan-paul-heritage-portrait.jpg",
     "course": "BSCIS",
     "section": "4th year · Great Books–GEC-GB-NRs",
-    "intro": "I am a fourth-year BSCIS student exploring how great literature speaks to the choices, relationships, and responsibilities of modern life. This portfolio brings together eight works and the questions they raise about being human.",
-    "interests": "The meeting point of stories, society, and technology offers a thoughtful place to begin. Questions about power, identity, loyalty, and judgment connect these ancient and medieval works to the systems we build and the communities we live in.",
-    "expectation": "To move beyond remembering a plot and learn to interpret it: to examine evidence, understand a different perspective, and connect a work’s historical world with the ethical questions of my own."
+    "intro": "I am Shan Paul S. Bermudo, a fourth-year BSCIS student. In this portfolio, I bring together eight Great Books readings and a personal connection to The Odyssey: continuing toward a goal even when the work becomes difficult.",
+    "interests": "As a BSCIS student, learning is part of my everyday life, especially when working with new technology. In projects, we check and recheck an application to find ways to improve it. That process is the connection I see between my studies and Odysseus’s persistence.",
+    "expectation": "My goal is to explain what happens in a work, support an interpretation with details, and make a connection I can explain from my own experience. For The Odyssey, that connection is persistence in learning and improving my work."
   },
   "analyses": [
     {
@@ -22,7 +22,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#e0e8e5",
       "shortDescription": "From the heart of a storm comes a challenge to human certainty, and a different way of understanding suffering.",
       "readTime": "4 min read",
-      "overview": "This reading considers the divine speeches in Job 38–41 and their resolution in chapter 42, the context commonly associated with The Voice from the Whirlwind. A theological literary lens examines how imagery, voice, and dramatic structure represent the relationship between humanity and the divine. The central argument is that the passage challenges confident explanations of suffering without making suffering insignificant. Its movement from argument to encounter invites humility while resisting the cruelty of assuming that another person’s pain proves their guilt.",
+      "overview": "The divine speeches in Job 38–41 and their resolution in chapter 42 form the passage considered here as The Voice from the Whirlwind. A theological lens examines the questions, natural imagery, and dramatic encounter between Job and God. The argument is that the passage challenges certainty about suffering without making suffering unimportant. Job’s changed perspective and the rebuke of his friends connect humility with the need to listen to someone in pain.",
       "sections": [
         {
           "heading": "An answer that takes the form of questions",
@@ -72,7 +72,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#e9e3c9",
       "shortDescription": "Talking animals and stories within stories turn the difficult arts of friendship, judgment, and leadership into memorable lessons.",
       "readTime": "4 min read",
-      "overview": "The Panchatantra teaches practical judgment through interconnected animal fables, framed as instruction for princes. This reading uses a didactic lens to examine the relationship between storytelling and moral education. It argues that the collection’s deepest lesson is the need to interpret situations carefully: wisdom is more demanding than memorizing a rule. The stories reveal how language can sustain friendship or destroy it, and how intelligence must be examined in relation to the purposes it serves.",
+      "overview": "The Panchatantra uses connected animal fables to teach practical judgment. Through a didactic lens, this analysis examines how the stories educate their audience, especially when characters use other stories to support advice. The central argument is that wisdom requires judging a situation rather than memorizing a rule. The collection shows how speech can protect a friendship or destroy it, and why a clever strategy still needs ethical examination.",
       "sections": [
         {
           "heading": "Why teach through a story?",
@@ -126,7 +126,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#dce8e7",
       "shortDescription": "Exile, devotion, and the journey toward home reveal a vision of heroism tested by loyalty, loss, and competing duties.",
       "readTime": "4 min read",
-      "overview": "The Ramayana follows Rama’s exile, Sita’s abduction, the search for her, and the struggle against Ravana. This reading approaches the Valmiki tradition through an archetypal lens, considering the hero’s departure, trials, helpers, and return. It argues that these recurring patterns illuminate the epic only when they also preserve its complexity. Heroism emerges through relationships and difficult obligations, while Sita’s endurance and Hanuman’s devotion complicate a reading centered exclusively on the warrior’s triumph.",
+      "overview": "The Ramayana follows Rama’s exile, Sita’s abduction, the search for her, and the conflict with Ravana. An archetypal lens traces departure, trials, helpers, and return within the Valmiki tradition. These patterns reveal a heroism that depends on relationships and competing duties. Sita’s resistance and Hanuman’s service are essential to the reading because a focus on Rama’s victory alone would leave out their contributions and the costs of restoration.",
       "sections": [
         {
           "heading": "Departure as a test of duty",
@@ -180,7 +180,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#eadfd2",
       "shortDescription": "A conflict within a family becomes an immense inquiry into justice, divided loyalties, and the human cost of victory.",
       "readTime": "4 min read",
-      "overview": "The Mahabharata traces the conflict between the Pandavas and Kauravas, placing disputes over rule within a much larger inquiry into dharma. This reading uses an ethical lens to examine conflicting duties, responsibility, and the consequences of action. It argues that the epic’s moral force lies in its refusal to make correct judgment effortless. Family loyalty, public obligation, personal honor, and the protection of others can pull in different directions, while victory itself leaves an obligation to reckon with suffering.",
+      "overview": "The conflict between the Pandavas and Kauravas places questions of rule, family, and dharma at the center of The Mahabharata. An ethical lens examines decisions in which loyalty, public duty, honor, and the protection of others pull in different directions. The dice game, Arjuna’s distress, and the aftermath of war show why claiming a rightful cause is not enough. Decisions must also be judged through their consequences and the suffering that remains after victory.",
       "sections": [
         {
           "heading": "When duties come into conflict",
@@ -234,7 +234,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#eee0d1",
       "readTime": "5 min read",
       "shortDescription": "Achilles' anger exposes the cost of honor, while grief opens a fragile path toward recognizing an enemy's humanity.",
-      "overview": "The Iliad concentrates on a period near the end of the Trojan War, beginning with the quarrel between Achilles and Agamemnon. Rather than narrating the entire war or Troy's destruction, it follows the consequences of anger, wounded status, and loss. Through an ethical lens, the epic asks whether public honor can justify suffering imposed on others. Its deepest challenge emerges when heroic achievement confronts the vulnerability shared by victors, enemies, and families.",
+      "overview": "The Iliad begins with the quarrel between Achilles and Agamemnon during the Trojan War. It follows the consequences of anger and loss rather than narrating the whole war or the destruction of Troy. An ethical lens asks whether wounded honor can justify harm to others. Hector’s family, the treatment of his body, and Priam’s appeal bring the cost of heroic conflict into view and test whether an enemy’s grief can place limits on revenge.",
       "sections": [
         {
           "heading": "When wounded honor becomes a public disaster",
@@ -288,7 +288,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#dce8e7",
       "readTime": "5 min read",
       "shortDescription": "The journey home tests more than endurance: it asks whether identity, judgment, and belonging can survive a changed world.",
-      "overview": "The Odyssey follows Odysseus' difficult return to Ithaca after the Trojan War and the parallel struggles of his household. An archetypal lens traces recurring patterns of departure, trial, temptation, disguise, recognition, and return. These patterns connect the epic's varied episodes, but they do not make its hero flawless or its values universal. The homecoming becomes meaningful because survival alone cannot restore the relationships and responsibilities interrupted by absence.",
+      "overview": "The Odyssey follows Odysseus’s return to Ithaca and the struggles of the household waiting for him. An archetypal lens traces the journey through trials, temptation, disguise, recognition, and return. The pattern helps connect the episodes without making Odysseus flawless. Reaching home requires endurance, but restoring relationships also depends on judgment and recognition. The poem’s violence complicates the idea that a successful return settles every question about responsibility.",
       "sections": [
         {
           "heading": "A journey that tests the traveler",
@@ -338,7 +338,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#ede0cd",
       "readTime": "5 min read",
       "shortDescription": "A remembered defeat becomes an epic of loyalty, revealing how communities turn the past into a story about belonging.",
-      "overview": "The Song of Roland recounts the destruction of Charlemagne's rear guard at Roncevaux through betrayal, heroic resistance, and eventual vengeance. A historical lens separates the poem's medieval construction of the past from the earlier event it transforms. This distinction reveals how epic narrative can preserve ideals while also reorganizing memory. The work celebrates courage and feudal fidelity, but it also exposes tensions between prudent leadership, personal glory, and religiously defined collective identity.",
+      "overview": "The Song of Roland turns the destruction of Charlemagne’s rear guard at Roncevaux into an account of betrayal, loyalty, and vengeance. A historical lens distinguishes the poem’s medieval reconstruction from the earlier event it recalls. This analysis asks what that transformation does for its audience. The poem honors courage and fidelity while exposing tensions between personal reputation, prudent leadership, and a collective identity shaped through religious opposition.",
       "sections": [
         {
           "heading": "Remembering an event through a later world",
@@ -392,7 +392,7 @@ window.PORTFOLIO_CONTENT = {
       "accent": "#e9dfeb",
       "readTime": "5 min read",
       "shortDescription": "Behind the elegance of Heian court life, women's feelings reveal the unequal power hidden within beautiful encounters.",
-      "overview": "Written by Murasaki Shikibu in early eleventh-century Japan, The Tale of Genji explores court life through intimate relationships, poetry, rank, and loss. A feminist lens examines how gender interacts with social position to shape who can pursue desire and who bears its consequences. The reading must remain sensitive to the Heian setting rather than assuming modern courtship rules. Its central argument is that aesthetic refinement does not necessarily produce equal recognition or freedom.",
+      "overview": "Murasaki Shikibu’s The Tale of Genji explores relationships, poetry, rank, and loss in the Heian court. A feminist lens examines how gender and social position affect a person’s freedom to pursue, refuse, or negotiate a relationship. The analysis keeps that historical setting in view while questioning the power behind courtly elegance. Its central argument is that refinement and affection do not, by themselves, give another person equal recognition or control over their life.",
       "sections": [
         {
           "heading": "Courtly beauty and unequal room to act",
@@ -441,47 +441,68 @@ window.PORTFOLIO_CONTENT = {
   ],
   "learning": [
     {
-      "title": "Reading across cultures and centuries",
-      "body": "Great Books places ancient and medieval India, the Greek epic world, Hebrew and Biblical traditions, medieval Europe, and Heian Japan in conversation without making their differences disappear. Cultural and historical context helps explain how each work imagines duty, faith, family, authority, and a meaningful life. I can compare recurring concerns while respecting the particular traditions that give them shape. Similar questions do not always produce the same answers, and a work's values should be examined through both its own circumstances and the consequences they reveal."
+      "title": "Recognizing the shape of a journey",
+      "body": "An archetypal reading follows patterns such as departure, trial, and return. The Ramayana and The Odyssey both involve separation from home, but the characters face different duties and difficulties. The pattern helps organize an analysis; the details explain what makes each work distinct. In The Odyssey, the important question is what returning home demands after the war has already been won."
     },
     {
-      "title": "Using a lens with purpose",
-      "body": "A literary lens is a disciplined way of directing attention. Ethical reading examines responsibility and harm; archetypal reading traces journeys and recurring patterns; feminist reading studies gender, agency, and power; historical reading distinguishes a work's setting from the circumstances of its production. No approach reveals everything. Comparing lenses helps me notice what a first interpretation overlooks. The task is to support a claim with textual details, acknowledge a lens's limits, and remain willing to revise an argument when a passage resists it."
+      "title": "Supporting an idea with a specific detail",
+      "body": "Saying that Odysseus is persistent gives an interpretation, but it needs an example. His struggle after the storm in Book 5 provides one. The Cyclops episode adds a complication because his own decision creates further danger. Connecting a claim to those details makes an analysis more precise than listing obstacles or attaching a general lesson to the ending."
     },
     {
-      "title": "Moving from summary to interpretation",
-      "body": "Plot summary explains what happens, while analysis explains how a work creates meaning and why a detail matters. A stronger interpretation connects an event, image, contrast, or narrative choice to a clear claim. Achilles' treatment of Hector's body, Penelope's recognition test, and Roland's delayed horn call each invite arguments that go beyond recounting action. Careful analysis also distinguishes a character's belief from the work's larger perspective and separates a convincing possibility from a conclusion that the evidence cannot fully support."
+      "title": "Separating admiration from approval",
+      "body": "A character can have an admirable quality and still make harmful decisions. The Iliad examines the consequences of Achilles’s anger, while The Song of Roland places courage beside questions about calling for help. This distinction helps an ethical reading stay focused on actions and consequences. Admiring determination does not require defending every choice a character makes."
     },
     {
-      "title": "Connecting literature to responsible judgment",
-      "body": "Literature makes human consequences visible within decisions that might otherwise seem abstract. The course's works ask who is heard, who is protected, and who carries the cost of loyalty or ambition. As a BSCIS student, I can carry those questions into systems design, teamwork, and the treatment of information. A system's efficiency matters alongside accessibility, privacy, and its effects on people with less power. The connection is a habit of attention: identify assumptions, consider affected perspectives, and make decisions that can be explained responsibly."
+      "title": "Connecting persistence to BSCIS work",
+      "body": "My connection to The Odyssey comes from learning technology and working on applications. In a project, we check and recheck the application to improve it. The work continues after an initial result. Odysseus’s determination gives me a way to explain that attitude: keep the goal in mind while paying attention to what still needs to change."
     }
   ],
   "reflection": [
     {
       "question": "How has your understanding and appreciation of literature changed throughout the course?",
-      "title": "From finding the message to examining the question",
-      "body": "I now understand literature as a way of examining difficult questions rather than a collection of plots with a single lesson at the end. The Iliad can honor courage while revealing the suffering attached to honor. The Odyssey can celebrate homecoming while leaving questions about revenge and authority unresolved. Holding these tensions together gives me a more thoughtful kind of appreciation. I do not need to agree with every value in a work to recognize how carefully it makes human conflict visible. This changes how I want to read: slowly enough to notice whose voice shapes the account and whose experience complicates it. As a fourth-year BSCIS student, I am used to looking for workable solutions. Literature reminds me that defining a problem is already an interpretive act. Before deciding what an answer should accomplish, I need to understand the people and assumptions contained in the question. That habit makes the study of old works relevant to present choices."
+      "title": "Why an old journey matters to me",
+      "body": "My appreciation of literature is closely connected to The Odyssey. What interests me is that Odysseus has already won a war, but his difficulties are not over. Going home becomes another long struggle. His persistence gives me a reason to care about the story beyond knowing how it ends.\n\nI can connect that idea to BSCIS because learning new technology is part of everyday student life. Completing one task does not mean there is nothing left to learn. A project can also need more checking after its first version is finished. This connection helps me explain why the work matters to me: the story gives a clear form to the effort of continuing toward a goal while difficulties remain."
     },
     {
       "question": "What challenges did you encounter when reading and analyzing literary masterpieces, and how did you overcome them?",
-      "title": "Giving unfamiliar worlds enough time",
-      "body": "The greatest challenge these works present is the distance between recognizing an action and understanding what it means within another culture. Roland's concern for reputation, the courtly exchanges in The Tale of Genji, and the obligations surrounding Greek heroism can seem obvious until I ask what assumptions support them. The language of a translation adds another difficulty because familiar English words may carry ideas that do not fully match the original setting. My response is to slow the process down: establish the sequence of events, identify the exact detail that creates uncertainty, consult reliable context, and return to the passage. I can also separate observation from interpretation in my notes so that a useful possibility does not become an unsupported fact. This method resembles debugging in one helpful respect: a precise question produces better progress than a general sense that something is confusing. The aim is not to eliminate ambiguity, but to understand which uncertainties belong to the work itself."
+      "title": "Making my first explanation more precise",
+      "body": "My first explanation of The Odyssey focused on Odysseus being cursed by the gods and facing many problems. That expresses what interested me, but it needs more detail to become a clear analysis. Poseidon opposes his return, while Athena helps him. His own decisions also affect the journey.\n\nThe challenge in my explanation is moving beyond “he faces many things” to showing what a particular event reveals. The storm in Book 5 supports the idea of persistence, while the Cyclops episode shows that cleverness can be followed by a poor decision. Checking those details is a useful next step for my reading and writing. It keeps the lesson connected to the story instead of leaving it as a general statement."
     },
     {
       "question": "Which literary lens or approach influenced your interpretation the most, and why?",
-      "title": "An ethical lens brings consequences into view",
-      "body": "The ethical lens is the approach I find most influential because it asks me to look beyond a character's intention and consider who experiences the result. Achilles has reasons to feel wronged, but those reasons do not settle whether other people should suffer from his response. Roland's courage is compelling, yet his refusal to call for help raises questions about responsibility toward his companions. These examples make interpretation more demanding than choosing a hero and defending every action he takes. I can recognize courage, grief, or loyalty while still examining the limits of what they justify. The lens also encourages me to consider people outside the central conflict, including captives, families, and those who cannot control the decision. For BSCIS, this perspective has practical value. A technically successful system can still place an unfair burden on its users. Asking who benefits, who bears risk, and who has a meaningful choice helps me connect literary judgment with the responsibilities of designing and using technology."
+      "title": "Using the journey pattern to explain persistence",
+      "body": "The archetypal approach best fits the connection I described with The Odyssey. It follows the journey through separation, obstacles, and return. That structure helps me explain why Odysseus’s persistence stands out: the difficulties interrupt a goal that remains important to him.\n\nThis approach gives my interpretation an order. I can identify the destination, examine an obstacle, and ask how the response affects the journey. I also need to keep the specific events in view. Calling Odysseus a hero does not explain every decision he makes or make those decisions correct. For my reading, the useful part of the lens is how it organizes the struggle to return home while leaving room to examine mistakes, help from others, and the cost of continuing."
     },
     {
       "question": "What important realizations about life, society, culture, or human nature have you gained?",
-      "title": "Admiration needs room for a second perspective",
-      "body": "A realization I take from these works is that admiration becomes more responsible when it allows another perspective to interrupt it. Genji's refinement does not remove the unequal conditions of his relationships. The Song of Roland creates solidarity through a powerful account of collective identity, but its religious divisions also show how a community can misrepresent outsiders. The Iliad makes a similar interruption possible when Priam's grief reaches Achilles across the boundary between enemies. These are different literary worlds, so I should not flatten them into one universal message. Together, however, they encourage a habit of looking for the person hidden by a confident label. A hero, an enemy, a leader, or a user remains a person situated within relationships and constraints. This matters in social life because a convenient description can make judgment feel complete before understanding has begun. I want to keep the ability to evaluate actions clearly while resisting the assumption that a single role explains an entire human being."
+      "title": "Persistence needs a willingness to improve",
+      "body": "The main realization I connect with is that difficulty does not automatically mean a goal should be abandoned. Odysseus keeps trying to return home even when circumstances are against him. That is the quality I admire, and it connects with the need to keep learning as a BSCIS student.\n\nAt the same time, persistence should include checking the approach. In an application project, repeating the same action is not enough if the work still needs improvement. We have to check and recheck it. The Cyclops episode provides a literary reason to make that distinction: an escape can succeed while a later decision creates another problem. The lesson I take is to continue working while remaining willing to examine what went wrong."
     },
     {
       "question": "How can you apply the lessons and values learned from Great Books in your personal, academic, or future professional life?",
-      "title": "Carrying attentive judgment into technology and everyday life",
-      "body": "I can apply Great Books by making careful interpretation part of ordinary decisions. In academic work, that means distinguishing evidence from assumption, acknowledging sources, and revising an argument when a stronger explanation appears. In personal relationships, it means listening long enough to understand why another person describes the same situation differently. In a future BSCIS role, I want these habits to influence how I understand requirements and evaluate systems. Before calling a process efficient, I can ask whether people can use it, whether their information is protected, and whether its failures fall most heavily on those with the least control. Penelope's careful recognition, Olivier's attention to consequences, and Priam's appeal to shared vulnerability offer different reminders to pause before accepting an easy account. The realistic application is not to treat a literary character as a technical rule. It is to practice asking better questions, explain decisions honestly, and remain accountable to the people affected by what I help build."
+      "title": "Learning, checking, and trying again",
+      "body": "The clearest application for me is in BSCIS work. Learning new technology is an everyday responsibility, and application projects need checking and rechecking. I can use the idea of persistence by continuing that process even when the first version still needs improvement.\n\nIn academic work, that means returning to a task with a specific purpose: identify what needs attention, make a change, and check the result. In future work, I want to keep the same willingness to learn as technology changes. Odysseus’s journey helps me explain the attitude behind that process. A goal matters through the effort it continues to require. For me, the practical lesson is to keep working, keep learning, and check whether each attempt brings the work closer to its purpose."
     }
-  ]
+  ],
+  "favorite": {
+    "work": "odyssey",
+    "deck": "What I admire about Odysseus is that he keeps trying to get home, even when circumstances are against him.",
+    "overview": "After the Trojan War, Odysseus struggles to return to Ithaca. Poseidon’s anger makes the journey harder, while Athena helps him. Storms, captivity, and dangerous encounters delay his return. At home, Penelope and Telemachus face the suitors occupying their household.",
+    "reasons": "The Odyssey is my favorite because winning the war does not mean Odysseus can simply go home. He still faces one difficulty after another. What interests me is his persistence: even when the journey is against him, he continues trying to reach Ithaca. His goal stays important to him when reaching it becomes difficult.\n\nThat is the part I connect with as a BSCIS student. Learning new technology is an ongoing process, and a project still needs checking and improvement. I see a similar determination in Odysseus’s journey. I do not need to compare an application problem with the danger of his voyage to recognize the connection: both involve continuing to work toward a goal when the next step is difficult.",
+    "lessons": "Persistence is the main lesson I take from Odysseus. Book 5 gives a concrete example: after leaving Calypso, he faces a storm sent by Poseidon and struggles to reach land. He needs help as well as determination. This makes the journey more convincing to me than a story in which the hero succeeds without difficulty.\n\nThe Cyclops episode in Book 9 also puts a limit on admiring him without question. His plan helps him escape, but announcing his name allows Polyphemus to call on Poseidon against him. Continuing toward a goal matters, but so does examining a decision that creates another problem. That fits the difference between simply repeating an action and checking how to improve it.",
+    "connection": "In my BSCIS projects, we need to check and recheck an application to improve it. Finishing an initial version does not remove the need to examine the work again. Learning new technology also continues as part of student life; there is always something else to understand.\n\nThis is where Odysseus’s persistence makes sense to me. He wants to go home, but wanting it is not enough to make the journey easy. My own work involves much smaller difficulties, yet the useful connection is clear: keep learning, look again at what needs improvement, and continue working toward the goal. Persistence should include improving the approach, not only repeating it.",
+    "themes": "Persistence, Learning, Homecoming",
+    "sources": [
+      {
+        "label": "The Odyssey, Book 5 · the storm and the struggle to reach land",
+        "url": "https://classics.mit.edu/Homer/odyssey.5.v.html"
+      },
+      {
+        "label": "The Odyssey, Book 9 · the Cyclops and Polyphemus’s appeal to Poseidon",
+        "url": "https://classics.mit.edu/Homer/odyssey.9.ix.html"
+      }
+    ],
+    "sourceNote": "Samuel Butler translation, Internet Classics Archive at MIT. Butler uses Ulysses for Odysseus, Neptune for Poseidon, and Minerva for Athena. The cover shown is the Robert Fagles edition; the linked passages are Butler’s translation.",
+    "custom": true
+  }
 };
