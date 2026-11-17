@@ -226,6 +226,21 @@ input:focus, textarea:focus, select:focus { outline-color: var(--green); }
 .favorite-cover { box-shadow: 5px 10px 20px #263e3220; }
 .favorite-art::before { border-color: var(--line); }
 .site-footer .footer-brand { font-size: 27px; gap: 0; }
+/* Bring the favorite's story into the space alongside its cover. */
+.favorite-reader-opening .reader-intro { max-width: 30ch; font-size: 21px; line-height: 1.65; color: var(--ink); margin-top: 26px; }
+.favorite-opening-themes { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 20px 0 0; }
+.favorite-opening-themes li { padding: 6px 11px; border: 1px solid var(--line); background: #e5ddcc; color: #4c5145; font: 11px/1.6 var(--sans); }
+.favorite-reader-opening .favorite-opening-summary { max-width: none; margin: 28px 0 0; padding-top: 24px; border-top: 1px solid var(--line); }
+.favorite-opening-summary h2 { font-size: 24px; line-height: 1.4; letter-spacing: -.5px; margin-bottom: 16px; }
+.favorite-opening-summary p { font-size: 14px; line-height: 1.95; }
+@media (max-width: 820px) {
+  .favorite-opening-story { order: 2; }
+  .favorite-reader-opening .reader-intro { max-width: none; margin: 0; font-size: 20px; }
+}
+@media (max-width: 480px) {
+  .favorite-reader-opening .reader-intro { font-size: 19px; }
+  .favorite-opening-summary h2 { font-size: 22px; }
+}
 /* Explicit academic structure for the seven revised readings. */
 .analysis-title-label { margin: 0 0 12px; font: 10px/1.6 var(--sans); letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
 .analysis-metadata { display: grid; gap: 12px; margin: 24px 0 0; padding-block: 17px; border-block: 1px solid var(--line); }

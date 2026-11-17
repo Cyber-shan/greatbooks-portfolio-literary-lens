@@ -97,11 +97,19 @@
   }
   function renderAll(){renderBooks();renderProfile();renderFavorite();renderLearning();renderReflection();}
 
-  function readingOpening(book, favorite = false, introduction = book.overview, organized = false) {
+  function readingArtwork(book) {
     const image = window.PORTFOLIO_IMAGES?.[book.id];
-    const artwork = image ? `<figure class="reader-artwork"><img src="${escapeHTML(image.src)}" alt="${escapeHTML(image.alt)}" decoding="async"><figcaption>${escapeHTML(image.caption)}<a href="${escapeHTML(image.source)}" target="_blank" rel="noopener noreferrer">${escapeHTML(image.credit)} ↗</a></figcaption></figure>` : '';
+    return image ? `<figure class="reader-artwork"><img src="${escapeHTML(image.src)}" alt="${escapeHTML(image.alt)}" decoding="async"><figcaption>${escapeHTML(image.caption)}<a href="${escapeHTML(image.source)}" target="_blank" rel="noopener noreferrer">${escapeHTML(image.credit)} ↗</a></figcaption></figure>` : '';
+  }
+  function readingOpening(book, favorite = false, introduction = book.overview, organized = false) {
+    const artwork = readingArtwork(book);
     if (organized) return `<div class="reader-opening"><div class="reader-opening-copy"><header class="reader-opening-header"><p class="analysis-title-label">Literary masterpiece</p><h1 id="reader-title">${escapeHTML(book.title)}</h1><dl class="analysis-metadata"><div><dt>Author</dt><dd>${escapeHTML(book.author)}</dd></div><div><dt>Literary lens</dt><dd>${escapeHTML(book.lens)}</dd></div></dl><p class="analysis-context">${escapeHTML(book.year)} <span aria-hidden="true">·</span> ${escapeHTML(book.readTime)}</p></header><section class="analysis-introduction" aria-labelledby="analysis-introduction-title"><h2 id="analysis-introduction-title">Introduction</h2><p class="reader-intro">${escapeHTML(introduction)}</p></section></div>${artwork}</div>`;
     return `<div class="reader-opening"><div class="reader-opening-copy"><header class="reader-opening-header"><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)}${favorite ? '' : ` <span aria-hidden="true">/</span> ${escapeHTML(book.readTime)}`}</p></header><p class="reader-intro">${escapeHTML(introduction)}</p></div>${artwork}</div>`;
+  }
+
+  function favoriteOpening(book, favorite) {
+    const themes = favorite.themes.split(',').map(theme => theme.trim()).filter(Boolean);
+    return `<div class="reader-opening favorite-reader-opening"><div class="reader-opening-copy"><header class="reader-opening-header"><h1 id="reader-title">${escapeHTML(book.title)}</h1><p class="reader-byline">${escapeHTML(book.author)} · ${escapeHTML(book.year)}</p></header><div class="favorite-opening-story"><p class="reader-intro">${escapeHTML(favorite.deck)}</p>${themes.length ? `<ul class="favorite-opening-themes" aria-label="Key themes">${themes.map(theme => `<li>${escapeHTML(theme)}</li>`).join('')}</ul>` : ''}<section class="reader-section favorite-opening-summary"><h2>The story, in brief</h2>${favorite.overview.split(/\n\s*\n/).map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join('')}</section></div></div>${readingArtwork(book)}</div>`;
   }
 
   function organizedAnalysis(book) {
@@ -133,7 +141,7 @@
   function readFavorite() {
     const f=state.favorite, book=analyses().find(x=>x.id===f.work);
     currentReading=-1;
-    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${readingOpening(book, true, f.deck)}${[{heading:'The story, in brief',body:f.overview},{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
+    $('#reader-body').innerHTML=`<div class="reader-eyebrow">THE ONE THAT STAYED WITH ME</div>${favoriteOpening(book, f)}${[{heading:'Why this masterpiece',body:f.reasons},{heading:'Themes, characters & lessons',body:f.lessons},{heading:'A personal connection',body:f.connection}].map(s=>`<section class="reader-section"><h2>${escapeHTML(s.heading)}</h2>${s.body.split(/\n\s*\n/).map(p=>`<p>${escapeHTML(p)}</p>`).join('')}</section>`).join('')}<section class="reader-sources"><h2>Another way into the story</h2><button class="text-link" data-read="${book.id}">Read the full ${escapeHTML(book.lens.toLowerCase())} analysis ↗</button></section>`;
     $('#reader-position').textContent='A personal favorite';
     $('#previous-analysis').disabled=true;$('#next-analysis').disabled=true;
     if(!$('#reader-dialog').open)$('#reader-dialog').showModal();
