@@ -186,8 +186,6 @@
     $('.menu-toggle').setAttribute('aria-expanded',String(open));$('.menu-toggle').setAttribute('aria-label',open?'Close navigation':'Open navigation');$('#mobile-nav').hidden=!open;
   });
   $$('#mobile-nav a').forEach(link=>link.addEventListener('click',()=>{$('#mobile-nav').hidden=true;$('.menu-toggle').setAttribute('aria-expanded','false');$('.menu-toggle').setAttribute('aria-label','Open navigation');}));
-  $('#credits-button').addEventListener('click',()=>$('#credits-dialog').showModal());
-  $('.close-credits').addEventListener('click',()=>$('#credits-dialog').close());
   $$('dialog').forEach(dialog=>dialog.addEventListener('click',event=>{
     if(event.target!==dialog)return;
     const r=dialog.getBoundingClientRect();
